@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="BlazeDemo Booking Suite">
-	<listeners>
+    <listeners>
         <listener class-name="listeners.MyListeners" />
     </listeners>
+    
     <test name="End To End Flight Booking Test">
+        <groups>
+            <run>
+                <include name="end-to-end" />
+            </run>
+        </groups>
+        
         <classes>
             <class name="testcases.BlazeDemoTest"/>
         </classes>

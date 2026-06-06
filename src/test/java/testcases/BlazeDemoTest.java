@@ -18,7 +18,7 @@ public class BlazeDemoTest extends BaseTest {
         };
     }
 
-    @Test(dataProvider = "bookingData")
+    @Test(dataProvider = "bookingData", groups = { "end-to-end" })
     public void testFlightBookingJourney(String departure, String destination, String name, String address, String city, String state, String zip, String cardType, String cardNumber, String cardName) {
         SoftAssert softAssert = new SoftAssert();
 

@@ -18,7 +18,6 @@ public class MyListeners implements ITestListener {
     @Override
     public void onTestFailure(ITestResult result) {
         System.out.println("❌ TEST FAILED: " + result.getName() + " -> Taking automated screenshot.");
-        // This is where your screenshot utility will hook in automatically later!
     }
 
     @Override
