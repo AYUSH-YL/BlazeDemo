@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-06T12:22:29 IST" name="BlazeDemo Booking Suite" finished-at="2026-06-06T12:22:44 IST" duration-ms="14648">
+    <groups>
+      <group name="end-to-end">
+        <method signature="BlazeDemoTest.testFlightBookingJourney(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.BlazeDemoTest@61c9c3fd]" name="testFlightBookingJourney" class="testcases.BlazeDemoTest"/>
+      </group> <!-- end-to-end -->
+    </groups>
+    <test started-at="2026-06-06T12:22:29 IST" name="End To End Flight Booking Test" finished-at="2026-06-06T12:22:44 IST" duration-ms="14648">
+      <class name="testcases.BlazeDemoTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.BlazeDemoTest@61c9c3fd]" started-at="2026-06-06T12:22:30 IST" name="setUp" finished-at="2026-06-06T12:22:35 IST" duration-ms="5114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFlightBookingJourney(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.BlazeDemoTest@61c9c3fd]" started-at="2026-06-06T12:22:37 IST" name="testFlightBookingJourney" data-provider="bookingData" finished-at="2026-06-06T12:22:43 IST" duration-ms="5715" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Paris]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Buenos Aires]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[John Doe]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123 Main St]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Anytown]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[State]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Visa]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[4242 4242 4242 4242]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[John Doe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFlightBookingJourney -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.BlazeDemoTest@61c9c3fd]" started-at="2026-06-06T12:22:43 IST" name="tearDown" finished-at="2026-06-06T12:22:44 IST" duration-ms="974" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.BlazeDemoTest -->
+    </test> <!-- End To End Flight Booking Test -->
+  </suite> <!-- BlazeDemo Booking Suite -->
+</testng-results>

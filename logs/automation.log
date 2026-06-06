@@ -1,0 +1,44 @@
+2026-06-06 12:02:50 [main] INFO  base.BaseTest - 🚀 Initializing browser automation setup...
+2026-06-06 12:02:57 [main] INFO  base.BaseTest - 🌐 Chrome Browser launched and maximized successfully.
+2026-06-06 12:02:57 [main] INFO  base.BaseTest - 📊 Fetching test execution metrics from Excel sheet: BookingSheet
+2026-06-06 12:03:01 [main] INFO  base.BaseTest - 🔒 Browser instance terminated cleanly.
+2026-06-06 12:08:22 [main] INFO  base.BaseTest - 🚀 Initializing browser automation setup...
+2026-06-06 12:08:27 [main] INFO  base.BaseTest - 🌐 Chrome Browser launched and maximized successfully.
+2026-06-06 12:08:27 [main] INFO  base.BaseTest - 📊 Fetching test execution metrics from Excel sheet: BookingSheet
+2026-06-06 12:08:31 [main] INFO  base.BaseTest - 🔒 Browser instance terminated cleanly.
+2026-06-06 12:11:01 [main] INFO  base.BaseTest - 🚀 Initializing browser automation setup...
+2026-06-06 12:11:06 [main] INFO  base.BaseTest - 🌐 Chrome Browser launched and maximized successfully.
+2026-06-06 12:11:06 [main] INFO  base.BaseTest - 📊 Fetching test execution metrics from Excel sheet: BookingSheet
+2026-06-06 12:11:09 [main] INFO  base.BaseTest - 🔒 Browser instance terminated cleanly.
+2026-06-06 12:16:23 [main] INFO  base.BaseTest - 🚀 Initializing browser automation setup...
+2026-06-06 12:16:27 [main] INFO  base.BaseTest - 🌐 Chrome Browser launched and maximized successfully.
+2026-06-06 12:16:28 [main] INFO  base.BaseTest - 📊 Fetching test execution metrics from Excel sheet: BookingSheet
+2026-06-06 12:16:30 [main] INFO  base.BaseTest - 🔒 Browser instance terminated cleanly.
+2026-06-06 12:17:16 [main] INFO  base.BaseTest - 🚀 Initializing browser automation setup...
+2026-06-06 12:17:22 [main] INFO  base.BaseTest - 🌐 Chrome Browser launched and maximized successfully.
+2026-06-06 12:17:22 [main] INFO  base.BaseTest - 📊 Fetching test execution metrics from Excel sheet: BookingSheet
+2026-06-06 12:17:24 [main] INFO  base.BaseTest - 🎯 Starting End-to-End Flight Booking journey validation test loop.
+2026-06-06 12:17:24 [main] INFO  base.BaseTest - 🌐 Navigating browser session context directly to: https://blazedemo.com/index.php
+2026-06-06 12:17:26 [main] INFO  base.BaseTest - 🛫 Selecting Departure City: Paris | Destination City: Buenos Aires
+2026-06-06 12:17:27 [main] INFO  base.BaseTest - 🔍 Reviewing structural layout grid matching flight routing paths...
+2026-06-06 12:17:27 [main] INFO  base.BaseTest - 🖱️ Clicking first available active airliner option...
+2026-06-06 12:17:28 [main] INFO  base.BaseTest - 💵 Extracted total customer checkout pricing summary: 914.76
+2026-06-06 12:17:28 [main] INFO  base.BaseTest - ✍️ Typing reservation customer and payment field sets for: John Doe
+2026-06-06 12:17:32 [main] INFO  base.BaseTest - 📄 Verification receipt record returned message banner: Thank you for your purchase today!
+2026-06-06 12:17:32 [main] INFO  base.BaseTest - 📸 Triggering manual checkpoint screenshot: FlightBookingConfirmation
+2026-06-06 12:17:32 [main] INFO  base.BaseTest - 🏁 Concluding test thread block. Compiling assertion diagnostics parameters...
+2026-06-06 12:17:33 [main] INFO  base.BaseTest - 🔒 Browser instance terminated cleanly.
+2026-06-06 12:22:30 [main] INFO  base.BaseTest - 🚀 Initializing browser automation setup...
+2026-06-06 12:22:35 [main] INFO  base.BaseTest - 🌐 Chrome Browser launched and maximized successfully.
+2026-06-06 12:22:35 [main] INFO  base.BaseTest - 📊 Fetching test execution metrics from Excel sheet: BookingSheet
+2026-06-06 12:22:37 [main] INFO  base.BaseTest - 🎯 Starting End-to-End Flight Booking journey validation test loop.
+2026-06-06 12:22:37 [main] INFO  base.BaseTest - 🌐 Navigating browser session context directly to: https://blazedemo.com/index.php
+2026-06-06 12:22:38 [main] INFO  base.BaseTest - 🛫 Selecting Departure City: Paris | Destination City: Buenos Aires
+2026-06-06 12:22:40 [main] INFO  base.BaseTest - 🔍 Reviewing structural layout grid matching flight routing paths...
+2026-06-06 12:22:40 [main] INFO  base.BaseTest - 🖱️ Clicking first available active airliner option...
+2026-06-06 12:22:41 [main] INFO  base.BaseTest - 💵 Extracted total customer checkout pricing summary: 914.76
+2026-06-06 12:22:41 [main] INFO  base.BaseTest - ✍️ Typing reservation customer and payment field sets for: John Doe
+2026-06-06 12:22:43 [main] INFO  base.BaseTest - 📄 Verification receipt record returned message banner: Thank you for your purchase today!
+2026-06-06 12:22:43 [main] INFO  base.BaseTest - 📸 Triggering manual checkpoint screenshot: FlightBookingConfirmation
+2026-06-06 12:22:43 [main] INFO  base.BaseTest - 🏁 Concluding test thread block. Compiling assertion diagnostics parameters...
+2026-06-06 12:22:44 [main] INFO  base.BaseTest - 🔒 Browser instance terminated cleanly.

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [BlazeDemo Booking Suite]">
+  <listeners>
+    <listener class-name="listeners.MyListeners"/>
+  </listeners>
+  <test thread-count="5" name="End To End Flight Booking Test(failed)">
+    <groups>
+      <run>
+        <include name="end-to-end"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testcases.BlazeDemoTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testFlightBookingJourney"/>
+        </methods>
+      </class> <!-- testcases.BlazeDemoTest -->
+    </classes>
+  </test> <!-- End To End Flight Booking Test(failed) -->
+</suite> <!-- Failed suite [BlazeDemo Booking Suite] -->
