@@ -2,47 +2,61 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-08T16:25:02 IST" name="BlazeDemo Booking Suite" finished-at="2026-06-08T16:25:53 IST" duration-ms="50400">
+  <suite started-at="2026-06-11T13:02:57 IST" name="BlazeDemo Booking Suite" finished-at="2026-06-11T13:04:23 IST" duration-ms="86771">
     <groups>
       <group name="end-to-end">
-        <method signature="BlazeDemoTest.step1_validateBrokenPortalGateways()[pri:1, instance:testcases.BlazeDemoTest@ccb4b1b]" name="step1_validateBrokenPortalGateways" class="testcases.BlazeDemoTest"/>
-        <method signature="BlazeDemoTest.step2_searchFlights()[pri:2, instance:testcases.BlazeDemoTest@ccb4b1b]" name="step2_searchFlights" class="testcases.BlazeDemoTest"/>
-        <method signature="BlazeDemoTest.step3_validateAndSelectFlight()[pri:3, instance:testcases.BlazeDemoTest@ccb4b1b]" name="step3_validateAndSelectFlight" class="testcases.BlazeDemoTest"/>
-        <method signature="BlazeDemoTest.step4_fillPassengerFormAndBook()[pri:4, instance:testcases.BlazeDemoTest@ccb4b1b]" name="step4_fillPassengerFormAndBook" class="testcases.BlazeDemoTest"/>
-        <method signature="BlazeDemoTest.step5_validateConfirmationReceipt()[pri:5, instance:testcases.BlazeDemoTest@ccb4b1b]" name="step5_validateConfirmationReceipt" class="testcases.BlazeDemoTest"/>
+        <method signature="BlazeDemoTest.step2_searchFlights()[pri:1, instance:testcases.BlazeDemoTest@4097cac]" name="step2_searchFlights" class="testcases.BlazeDemoTest"/>
+        <method signature="BlazeDemoTest.step3_validateAndSelectFlight()[pri:2, instance:testcases.BlazeDemoTest@4097cac]" name="step3_validateAndSelectFlight" class="testcases.BlazeDemoTest"/>
+        <method signature="BlazeDemoTest.step4_fillPassengerFormAndBook()[pri:3, instance:testcases.BlazeDemoTest@4097cac]" name="step4_fillPassengerFormAndBook" class="testcases.BlazeDemoTest"/>
+        <method signature="BlazeDemoTest.step5_validateConfirmationReceipt()[pri:4, instance:testcases.BlazeDemoTest@4097cac]" name="step5_validateConfirmationReceipt" class="testcases.BlazeDemoTest"/>
+        <method signature="LoginTest.validateBrokenPortalGateways()[pri:1, instance:testcases.LoginTest@61c9c3fd]" name="validateBrokenPortalGateways" class="testcases.LoginTest"/>
       </group> <!-- end-to-end -->
     </groups>
-    <test started-at="2026-06-08T16:25:02 IST" name="End To End Flight Booking Test" finished-at="2026-06-08T16:25:53 IST" duration-ms="50400">
+    <test started-at="2026-06-11T13:02:57 IST" name="End To End Flight Booking Test" finished-at="2026-06-11T13:04:23 IST" duration-ms="86771">
       <class name="testcases.BlazeDemoTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.BlazeDemoTest@ccb4b1b]" started-at="2026-06-08T16:25:03 IST" name="setUp" finished-at="2026-06-08T16:25:10 IST" duration-ms="7090" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.BlazeDemoTest@4097cac]" started-at="2026-06-11T13:03:58 IST" name="setUp" finished-at="2026-06-11T13:04:02 IST" duration-ms="3559" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="step1_validateBrokenPortalGateways()[pri:1, instance:testcases.BlazeDemoTest@ccb4b1b]" started-at="2026-06-08T16:25:10 IST" name="step1_validateBrokenPortalGateways" finished-at="2026-06-08T16:25:23 IST" duration-ms="12972" status="PASS">
+        <test-method is-config="true" signature="initializeTestData()[pri:0, instance:testcases.BlazeDemoTest@4097cac]" started-at="2026-06-11T13:04:02 IST" name="initializeTestData" finished-at="2026-06-11T13:04:03 IST" duration-ms="1725" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- step1_validateBrokenPortalGateways -->
-        <test-method signature="step2_searchFlights()[pri:2, instance:testcases.BlazeDemoTest@ccb4b1b]" started-at="2026-06-08T16:25:23 IST" name="step2_searchFlights" finished-at="2026-06-08T16:25:25 IST" depends-on-methods="testcases.BlazeDemoTest.step1_validateBrokenPortalGateways" duration-ms="1335" status="PASS">
+        </test-method> <!-- initializeTestData -->
+        <test-method signature="step2_searchFlights()[pri:1, instance:testcases.BlazeDemoTest@4097cac]" started-at="2026-06-11T13:04:03 IST" name="step2_searchFlights" finished-at="2026-06-11T13:04:07 IST" duration-ms="3874" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- step2_searchFlights -->
-        <test-method signature="step3_validateAndSelectFlight()[pri:3, instance:testcases.BlazeDemoTest@ccb4b1b]" started-at="2026-06-08T16:25:25 IST" name="step3_validateAndSelectFlight" finished-at="2026-06-08T16:25:25 IST" depends-on-methods="testcases.BlazeDemoTest.step2_searchFlights" duration-ms="780" status="PASS">
+        <test-method signature="step3_validateAndSelectFlight()[pri:2, instance:testcases.BlazeDemoTest@4097cac]" started-at="2026-06-11T13:04:07 IST" name="step3_validateAndSelectFlight" finished-at="2026-06-11T13:04:09 IST" depends-on-methods="testcases.BlazeDemoTest.step2_searchFlights" duration-ms="1262" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- step3_validateAndSelectFlight -->
-        <test-method signature="step4_fillPassengerFormAndBook()[pri:4, instance:testcases.BlazeDemoTest@ccb4b1b]" started-at="2026-06-08T16:25:25 IST" name="step4_fillPassengerFormAndBook" finished-at="2026-06-08T16:25:28 IST" depends-on-methods="testcases.BlazeDemoTest.step3_validateAndSelectFlight" duration-ms="2745" status="PASS">
+        <test-method signature="step4_fillPassengerFormAndBook()[pri:3, instance:testcases.BlazeDemoTest@4097cac]" started-at="2026-06-11T13:04:09 IST" name="step4_fillPassengerFormAndBook" finished-at="2026-06-11T13:04:11 IST" depends-on-methods="testcases.BlazeDemoTest.step3_validateAndSelectFlight" duration-ms="2200" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- step4_fillPassengerFormAndBook -->
-        <test-method signature="step5_validateConfirmationReceipt()[pri:5, instance:testcases.BlazeDemoTest@ccb4b1b]" started-at="2026-06-08T16:25:28 IST" name="step5_validateConfirmationReceipt" finished-at="2026-06-08T16:25:39 IST" depends-on-methods="testcases.BlazeDemoTest.step4_fillPassengerFormAndBook" duration-ms="10829" status="PASS">
+        <test-method signature="step5_validateConfirmationReceipt()[pri:4, instance:testcases.BlazeDemoTest@4097cac]" started-at="2026-06-11T13:04:11 IST" name="step5_validateConfirmationReceipt" finished-at="2026-06-11T13:04:23 IST" depends-on-methods="testcases.BlazeDemoTest.step4_fillPassengerFormAndBook" duration-ms="11908" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- step5_validateConfirmationReceipt -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.BlazeDemoTest@ccb4b1b]" started-at="2026-06-08T16:25:39 IST" name="tearDown" finished-at="2026-06-08T16:25:53 IST" duration-ms="13703" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.BlazeDemoTest@4097cac]" started-at="2026-06-11T13:04:23 IST" name="tearDown" finished-at="2026-06-11T13:04:23 IST" duration-ms="620" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.BlazeDemoTest -->
+      <class name="testcases.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@61c9c3fd]" started-at="2026-06-11T13:02:57 IST" name="setUp" finished-at="2026-06-11T13:03:15 IST" duration-ms="17522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateBrokenPortalGateways()[pri:1, instance:testcases.LoginTest@61c9c3fd]" started-at="2026-06-11T13:03:15 IST" name="validateBrokenPortalGateways" finished-at="2026-06-11T13:03:39 IST" duration-ms="24029" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateBrokenPortalGateways -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@61c9c3fd]" started-at="2026-06-11T13:03:39 IST" name="tearDown" finished-at="2026-06-11T13:03:58 IST" duration-ms="18838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.LoginTest -->
     </test> <!-- End To End Flight Booking Test -->
   </suite> <!-- BlazeDemo Booking Suite -->
 </testng-results>

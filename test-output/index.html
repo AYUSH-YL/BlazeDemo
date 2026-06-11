@@ -103,11 +103,6 @@
                     <div class="method-list-content passed suite-BlazeDemo_Booking_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-BlazeDemo_Booking_Suite" title="testcases.BlazeDemoTest" class="method navigator-link" hash-for-method="step1_validateBrokenPortalGateways">step1_validateBrokenPortalGateways</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-BlazeDemo_Booking_Suite" title="testcases.BlazeDemoTest" class="method navigator-link" hash-for-method="step2_searchFlights">step2_searchFlights</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -124,6 +119,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-BlazeDemo_Booking_Suite" title="testcases.BlazeDemoTest" class="method navigator-link" hash-for-method="step5_validateConfirmationReceipt">step5_validateConfirmationReceipt</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BlazeDemo_Booking_Suite" title="testcases.LoginTest" class="method navigator-link" hash-for-method="validateBrokenPortalGateways">validateBrokenPortalGateways</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-BlazeDemo_Booking_Suite -->
@@ -144,13 +144,6 @@
               <span class="class-name">testcases.BlazeDemoTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="step1_validateBrokenPortalGateways">
-                  </a> <!-- step1_validateBrokenPortalGateways -->
-                  <span class="method-name">step1_validateBrokenPortalGateways</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="step2_searchFlights">
@@ -181,6 +174,21 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-BlazeDemo_Booking_Suite-class-passed -->
+          <div class="suite-BlazeDemo_Booking_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateBrokenPortalGateways">
+                  </a> <!-- validateBrokenPortalGateways -->
+                  <span class="method-name">validateBrokenPortalGateways</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BlazeDemo_Booking_Suite-class-passed -->
         </div> <!-- panel BlazeDemo_Booking_Suite -->
         <div panel-name="test-xml-BlazeDemo_Booking_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -201,6 +209,7 @@
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;testcases.LoginTest&quot;/&gt;
       &lt;class name=&quot;testcases.BlazeDemoTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- End To End Flight Booking Test --&gt;
@@ -215,7 +224,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">End To End Flight Booking Test (1 class)</span>
+                <span class="test-name">End To End Flight Booking Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -228,10 +237,6 @@
             <div class="test-group">
               <span class="test-group-name">end-to-end</span>
               <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">step1_validateBrokenPortalGateways</span>
-                <br/>
-              </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">step2_searchFlights</span>
                 <br/>
@@ -246,6 +251,10 @@
               </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">step5_validateConfirmationReceipt</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validateBrokenPortalGateways</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -267,30 +276,30 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'step1_validateBrokenPortalGateways')
-data.setCell(0, 2, 'testcases.BlazeDemoTest')
-data.setCell(0, 3, 12972);
+data.setCell(0, 1, 'validateBrokenPortalGateways')
+data.setCell(0, 2, 'testcases.LoginTest')
+data.setCell(0, 3, 24029);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'step5_validateConfirmationReceipt')
 data.setCell(1, 2, 'testcases.BlazeDemoTest')
-data.setCell(1, 3, 10829);
+data.setCell(1, 3, 11908);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'step4_fillPassengerFormAndBook')
+data.setCell(2, 1, 'step2_searchFlights')
 data.setCell(2, 2, 'testcases.BlazeDemoTest')
-data.setCell(2, 3, 2745);
+data.setCell(2, 3, 3874);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'step2_searchFlights')
+data.setCell(3, 1, 'step4_fillPassengerFormAndBook')
 data.setCell(3, 2, 'testcases.BlazeDemoTest')
-data.setCell(3, 3, 1335);
+data.setCell(3, 3, 2200);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'step3_validateAndSelectFlight')
 data.setCell(4, 2, 'testcases.BlazeDemoTest')
-data.setCell(4, 3, 780);
+data.setCell(4, 3, 1262);
 window.suiteTableData['BlazeDemo_Booking_Suite']= { tableData: data, tableDiv: 'times-div-BlazeDemo_Booking_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 28 seconds</span>
+              <span class="suite-total-time">Total running time: 43 seconds</span>
               <div id="times-div-BlazeDemo_Booking_Suite">
               </div> <!-- times-div-BlazeDemo_Booking_Suite -->
             </div> <!-- times-div -->
@@ -316,34 +325,49 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.BlazeDemoTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">step1_validateBrokenPortalGateways</span>
-                <span class="method-start">7171 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">step2_searchFlights</span>
-                <span class="method-start">20177 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">step3_validateAndSelectFlight</span>
-                <span class="method-start">21519 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">step4_fillPassengerFormAndBook</span>
-                <span class="method-start">22308 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">step5_validateConfirmationReceipt</span>
-                <span class="method-start">25059 ms</span>
+                <span class="method-name">validateBrokenPortalGateways</span>
+                <span class="method-start">17603 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">35896 ms</span>
+                <span class="method-start">41878 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.BlazeDemoTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">60720 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">initializeTestData</span>
+                <span class="method-start">64280 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">step2_searchFlights</span>
+                <span class="method-start">66006 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">step3_validateAndSelectFlight</span>
+                <span class="method-start">69888 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">step4_fillPassengerFormAndBook</span>
+                <span class="method-start">71157 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">step5_validateConfirmationReceipt</span>
+                <span class="method-start">73360 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">85270 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

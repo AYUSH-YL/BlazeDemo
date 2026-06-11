@@ -17,10 +17,6 @@ public class BlazeDemoHomePage {
         this.driver = driver;
     }
 
-    /**
-     * Navigates out of the flight booking path and jumps directly 
-     * to the Login/Registration sub-portal views.
-     */
     public void clickHomeButtonLink() {
         WaitUtils.waitForElementClickable(driver, homeButtonLink, 10).click();
     }

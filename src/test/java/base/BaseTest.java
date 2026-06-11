@@ -22,17 +22,12 @@ public class BaseTest {
         options.addArguments("--remote-allow-origins=*");
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
-        
-        // 🐳 DOCKER ENVIRONMENT DETECTION OVERRIDE
+    
         if (System.getenv("RUNNING_IN_DOCKER") != null) {
             log.info("System environment variable detected: Docker Pipeline. Forcing headless configuration flags.");
             options.addArguments("--headless=new");
             options.addArguments("--disable-gpu");
             options.addArguments("--window-size=1920,1080");
-            
-            // 🔥 FIX FOR EXCEL/JENKINS ERROR 65: 
-            // Point Selenium directly to the Google Chrome binary we installed in Step 2 of the Dockerfile.
-            // This stops Selenium Manager from checking the network and crashing.
             options.setBinary("/usr/bin/google-chrome");
         } else {
             log.info("System environment variable missing: Local Eclipse Sandbox. Launching visible GUI browser panel.");

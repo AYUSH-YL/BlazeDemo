@@ -274,3 +274,44 @@
 2026-06-08 16:25:39 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: FinalBookingConfirmationReceipt_Admin
 2026-06-08 16:25:39 [main] INFO  base.BaseTest - 🏁 Success: All rows processed.
 2026-06-08 16:25:53 [main] INFO  base.BaseTest - Browser instance terminated cleanly.
+2026-06-11 13:02:57 [main] INFO  base.BaseTest - Initializing browser automation setup.
+2026-06-11 13:02:57 [main] INFO  base.BaseTest - System environment variable missing: Local Eclipse Sandbox. Launching visible GUI browser panel.
+2026-06-11 13:03:15 [main] INFO  base.BaseTest - Chrome Browser instance initialized successfully.
+2026-06-11 13:03:15 [main] INFO  base.BaseTest - 🎯 Starting Portal Security Regression Sweep (Once).
+2026-06-11 13:03:15 [main] INFO  base.BaseTest - Navigating session directly to application index: https://blazedemo.com/index.php
+2026-06-11 13:03:27 [main] INFO  base.BaseTest - Injecting hardcoded registration placeholders.
+2026-06-11 13:03:33 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: Registration_419_Error_Page
+2026-06-11 13:03:35 [main] INFO  base.BaseTest - Registration 419 Page Verified Successfully.
+2026-06-11 13:03:36 [main] INFO  base.BaseTest - Injecting hardcoded login placeholders.
+2026-06-11 13:03:38 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: Login_419_Error_Page
+2026-06-11 13:03:39 [main] INFO  base.BaseTest - Login 419 Page Verified Successfully.
+2026-06-11 13:03:39 [main] INFO  base.BaseTest - Portal Sweep Complete. Session safely anchored on root landing grid.
+2026-06-11 13:03:58 [main] INFO  base.BaseTest - Browser instance terminated cleanly.
+2026-06-11 13:03:58 [main] INFO  base.BaseTest - Initializing browser automation setup.
+2026-06-11 13:03:58 [main] INFO  base.BaseTest - System environment variable missing: Local Eclipse Sandbox. Launching visible GUI browser panel.
+2026-06-11 13:04:02 [main] INFO  base.BaseTest - Chrome Browser instance initialized successfully.
+2026-06-11 13:04:02 [main] INFO  base.BaseTest - 📊 Initializing Data Provider Streams for Flight Regression Suite.
+2026-06-11 13:04:03 [main] INFO  base.BaseTest - 🛫 Selecting Route -> Paris to London
+2026-06-11 13:04:07 [main] INFO  base.BaseTest - Verifying flight grid selection tables.
+2026-06-11 13:04:09 [main] INFO  base.BaseTest - 💵 Injecting passenger details for: John##Doe!!
+2026-06-11 13:04:10 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: FormInputCheckpoint_Passenger_JohnDoe
+2026-06-11 13:04:11 [main] INFO  base.BaseTest - Asserting completion receipts for passenger: John##Doe!!
+2026-06-11 13:04:11 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: FinalBookingConfirmationReceipt_JohnDoe
+2026-06-11 13:04:11 [main] INFO  base.BaseTest - 🔄 Row 1 complete. Resetting for next dataset.
+2026-06-11 13:04:11 [main] INFO  base.BaseTest - 🛫 Selecting Route -> Portland to Rome
+2026-06-11 13:04:13 [main] INFO  base.BaseTest - Verifying flight grid selection tables.
+2026-06-11 13:04:14 [main] INFO  base.BaseTest - 💵 Injecting passenger details for: Amit_Sharma_$$
+2026-06-11 13:04:15 [main] WARN  pages.PurchasePage - Card type 'Mastercard' not found. Defaulting to 'Visa'.
+2026-06-11 13:04:15 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: FormInputCheckpoint_Passenger_AmitSharma
+2026-06-11 13:04:16 [main] INFO  base.BaseTest - Asserting completion receipts for passenger: Amit_Sharma_$$
+2026-06-11 13:04:16 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: FinalBookingConfirmationReceipt_AmitSharma
+2026-06-11 13:04:17 [main] INFO  base.BaseTest - 🔄 Row 2 complete. Resetting for next dataset.
+2026-06-11 13:04:17 [main] INFO  base.BaseTest - 🛫 Selecting Route -> Boston to Berlin
+2026-06-11 13:04:19 [main] INFO  base.BaseTest - Verifying flight grid selection tables.
+2026-06-11 13:04:20 [main] INFO  base.BaseTest - 💵 Injecting passenger details for: <Admin>
+2026-06-11 13:04:21 [main] WARN  pages.PurchasePage - Card type 'American Express' not found. Defaulting to 'Visa'.
+2026-06-11 13:04:21 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: FormInputCheckpoint_Passenger_Admin
+2026-06-11 13:04:22 [main] INFO  base.BaseTest - Asserting completion receipts for passenger: <Admin>
+2026-06-11 13:04:23 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: FinalBookingConfirmationReceipt_Admin
+2026-06-11 13:04:23 [main] INFO  base.BaseTest - 🏁 Success: All rows processed.
+2026-06-11 13:04:23 [main] INFO  base.BaseTest - Browser instance terminated cleanly.

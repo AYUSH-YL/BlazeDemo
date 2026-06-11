@@ -12,7 +12,9 @@
             </run>
         </groups>
         <classes>
-            <class name="testcases.BlazeDemoTest"/>
+            <class name="testcases.LoginTest" />
+            
+            <class name="testcases.BlazeDemoTest" />
         </classes>
     </test>
 </suite>
