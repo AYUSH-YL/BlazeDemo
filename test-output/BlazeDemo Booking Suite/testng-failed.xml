@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [BlazeDemo Booking Suite]">
+<suite name="Failed suite [BlazeDemo Booking Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="listeners.MyListeners"/>
   </listeners>
@@ -15,7 +15,11 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="testFlightBookingJourney"/>
+          <include name="step5_validateConfirmationReceipt"/>
+          <include name="step3_validateAndSelectFlight"/>
+          <include name="step2_searchFlights"/>
+          <include name="step4_fillPassengerFormAndBook"/>
+          <include name="step1_validateBrokenPortalGateways"/>
         </methods>
       </class> <!-- testcases.BlazeDemoTest -->
     </classes>

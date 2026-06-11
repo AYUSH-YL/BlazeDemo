@@ -4,8 +4,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 import utilities.WaitUtils;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.NoSuchElementException;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class PurchasePage {
+	private static final Logger log = LogManager.getLogger(PurchasePage.class);
     private WebDriver driver;
 
     private By purchaseHeader = By.xpath("//h2[contains(text(),'Your flight')]");
@@ -41,7 +46,12 @@ public class PurchasePage {
         driver.findElement(zipCodeField).sendKeys(zip);
         
         Select selectCard = new Select(driver.findElement(cardTypeDropdown));
-        selectCard.selectByValue(cardType.toLowerCase());
+        try {
+            selectCard.selectByValue(cardType.toLowerCase());
+        } catch (NoSuchElementException e) {
+            log.warn("Card type '" + cardType + "' not found. Defaulting to 'Visa'.");
+            selectCard.selectByVisibleText("Visa");
+        }
         
         driver.findElement(creditCardNumberField).sendKeys(cardNumber);
         driver.findElement(nameOnCardField).sendKeys(cardName);

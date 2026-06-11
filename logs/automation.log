@@ -42,3 +42,235 @@
 2026-06-06 12:22:43 [main] INFO  base.BaseTest - 📸 Triggering manual checkpoint screenshot: FlightBookingConfirmation
 2026-06-06 12:22:43 [main] INFO  base.BaseTest - 🏁 Concluding test thread block. Compiling assertion diagnostics parameters...
 2026-06-06 12:22:44 [main] INFO  base.BaseTest - 🔒 Browser instance terminated cleanly.
+2026-06-08 12:46:51 [main] INFO  base.BaseTest - Initializing browser automation setup.
+2026-06-08 12:47:06 [main] INFO  base.BaseTest - Chrome Browser launched and maximized successfully.
+2026-06-08 12:47:07 [main] INFO  base.BaseTest - Starting Step 1: Validating broken login and registration boundaries.
+2026-06-08 12:47:07 [main] INFO  base.BaseTest - Navigating browser session context directly to: https://blazedemo.com/index.php
+2026-06-08 12:47:15 [main] INFO  base.BaseTest - Injecting demo registration dataset values.
+2026-06-08 12:47:18 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: Registration_419_Error_Page
+2026-06-08 12:47:19 [main] INFO  base.BaseTest - Registration 419 Page Verified Successfully.
+2026-06-08 12:47:19 [main] INFO  base.BaseTest - Injecting demo login credential sets.
+2026-06-08 12:47:21 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: Login_419_Error_Page
+2026-06-08 12:47:21 [main] INFO  base.BaseTest - Login 419 Page Verified Successfully.
+2026-06-08 12:47:21 [main] INFO  base.BaseTest - Browser context successfully restored to main BlazeDemo landing matrix.
+2026-06-08 12:47:21 [main] INFO  base.BaseTest - Fetching test execution metrics from Excel sheet: BookingSheet
+2026-06-08 12:47:26 [main] INFO  base.BaseTest - Starting Step 2: Route selection mapping.
+2026-06-08 12:47:26 [main] INFO  base.BaseTest - Selecting Departure City: Paris, Destination City: London
+2026-06-08 12:47:28 [main] INFO  base.BaseTest - Starting Step 2: Route selection mapping.
+2026-06-08 12:47:28 [main] INFO  base.BaseTest - Selecting Departure City: Portland, Destination City: Rome
+2026-06-08 12:47:38 [main] INFO  base.BaseTest - Starting Step 2: Route selection mapping.
+2026-06-08 12:47:38 [main] INFO  base.BaseTest - Selecting Departure City: Boston, Destination City: Berlin
+2026-06-08 12:47:54 [main] INFO  base.BaseTest - Browser instance terminated cleanly.
+2026-06-08 13:10:46 [main] INFO  base.BaseTest - Initializing browser automation setup.
+2026-06-08 13:10:55 [main] INFO  base.BaseTest - Chrome Browser launched and maximized successfully.
+2026-06-08 13:10:55 [main] INFO  base.BaseTest - Starting Step 1: Validating broken login and registration boundaries.
+2026-06-08 13:10:55 [main] INFO  base.BaseTest - Navigating browser session context directly to: https://blazedemo.com/index.php
+2026-06-08 13:11:02 [main] INFO  base.BaseTest - Injecting demo registration dataset values.
+2026-06-08 13:11:04 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: Registration_419_Error_Page
+2026-06-08 13:11:05 [main] INFO  base.BaseTest - Registration 419 Page Verified Successfully.
+2026-06-08 13:11:05 [main] INFO  base.BaseTest - Injecting demo login credential sets.
+2026-06-08 13:11:06 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: Login_419_Error_Page
+2026-06-08 13:11:06 [main] INFO  base.BaseTest - Login 419 Page Verified Successfully.
+2026-06-08 13:11:06 [main] INFO  base.BaseTest - Browser context successfully restored to main BlazeDemo landing matrix.
+2026-06-08 13:11:06 [main] INFO  base.BaseTest - Fetching test execution metrics from Excel sheet: BookingSheet
+2026-06-08 13:11:08 [main] INFO  base.BaseTest - Starting Step 2: Route selection mapping.
+2026-06-08 13:11:08 [main] INFO  base.BaseTest - Selecting Departure City: Paris, Destination City: London
+2026-06-08 13:11:10 [main] INFO  base.BaseTest - Starting Step 2: Route selection mapping.
+2026-06-08 13:11:10 [main] INFO  base.BaseTest - Selecting Departure City: Portland, Destination City: Rome
+2026-06-08 13:11:21 [main] INFO  base.BaseTest - Starting Step 2: Route selection mapping.
+2026-06-08 13:11:21 [main] INFO  base.BaseTest - Selecting Departure City: Boston, Destination City: Berlin
+2026-06-08 13:11:33 [main] INFO  base.BaseTest - Browser instance terminated cleanly.
+2026-06-08 14:40:22 [main] INFO  base.BaseTest - Initializing browser automation setup.
+2026-06-08 14:40:37 [main] INFO  base.BaseTest - Chrome Browser launched and maximized successfully.
+2026-06-08 14:40:37 [main] INFO  base.BaseTest - Starting Step 1: Validating broken login and registration boundaries.
+2026-06-08 14:40:37 [main] INFO  base.BaseTest - Navigating browser session context directly to: https://blazedemo.com/index.php
+2026-06-08 14:40:45 [main] INFO  base.BaseTest - Injecting demo registration dataset values.
+2026-06-08 14:40:47 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: Registration_419_Error_Page
+2026-06-08 14:40:47 [main] INFO  base.BaseTest - Registration 419 Page Verified Successfully.
+2026-06-08 14:40:47 [main] INFO  base.BaseTest - Injecting demo login credential sets.
+2026-06-08 14:40:48 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: Login_419_Error_Page
+2026-06-08 14:40:49 [main] INFO  base.BaseTest - Login 419 Page Verified Successfully.
+2026-06-08 14:40:49 [main] INFO  base.BaseTest - Browser context successfully restored to main BlazeDemo landing matrix.
+2026-06-08 14:40:49 [main] INFO  base.BaseTest - Fetching test execution metrics from Excel sheet: BookingSheet
+2026-06-08 14:40:51 [main] INFO  base.BaseTest - Starting Step 2: Route selection mapping.
+2026-06-08 14:40:51 [main] INFO  base.BaseTest - Selecting Departure City: Paris, Destination City: London
+2026-06-08 14:40:53 [main] INFO  base.BaseTest - Starting Step 2: Route selection mapping.
+2026-06-08 14:40:53 [main] INFO  base.BaseTest - Selecting Departure City: Portland, Destination City: Rome
+2026-06-08 14:41:04 [main] INFO  base.BaseTest - Starting Step 2: Route selection mapping.
+2026-06-08 14:41:04 [main] INFO  base.BaseTest - Selecting Departure City: Boston, Destination City: Berlin
+2026-06-08 14:41:15 [main] INFO  base.BaseTest - Browser instance terminated cleanly.
+2026-06-08 14:46:24 [main] INFO  base.BaseTest - Initializing browser automation setup.
+2026-06-08 14:46:36 [main] INFO  base.BaseTest - Chrome Browser launched and maximized successfully.
+2026-06-08 14:46:39 [main] INFO  base.BaseTest - 🏁 Starting Step Group Sequence for Passenger: John##Doe!!
+2026-06-08 14:46:50 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: JohnDoe_Registration_419_Error
+2026-06-08 14:46:52 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: JohnDoe_Login_419_Error
+2026-06-08 14:46:52 [main] INFO  base.BaseTest - 🏁 Starting Step Group Sequence for Passenger: Amit_Sharma_$$
+2026-06-08 14:46:57 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: AmitSharma_Registration_419_Error
+2026-06-08 14:46:58 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: AmitSharma_Login_419_Error
+2026-06-08 14:46:59 [main] INFO  base.BaseTest - 🏁 Starting Step Group Sequence for Passenger: <Admin>
+2026-06-08 14:47:05 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: Admin_Registration_419_Error
+2026-06-08 14:47:07 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: Admin_Login_419_Error
+2026-06-08 14:47:07 [main] INFO  base.BaseTest - 🛫 Step 2: Running route search layout: Boston -> Berlin
+2026-06-08 14:47:09 [main] INFO  base.BaseTest - 🔍 Step 3: Resolving flight grid table elements.
+2026-06-08 14:47:11 [main] INFO  base.BaseTest - 💵 Step 4: Injecting boundaries parameters.
+2026-06-08 14:47:35 [main] INFO  base.BaseTest - Browser instance terminated cleanly.
+2026-06-08 14:50:38 [main] INFO  base.BaseTest - Initializing browser automation setup.
+2026-06-08 14:51:02 [main] INFO  base.BaseTest - Chrome Browser launched and maximized successfully.
+2026-06-08 14:51:06 [main] INFO  base.BaseTest - 🏁 Starting Step Sequence Loop Row for Passenger: John##Doe!!
+2026-06-08 14:51:16 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: JohnDoe_Registration_419_Error
+2026-06-08 14:51:18 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: JohnDoe_Login_419_Error
+2026-06-08 14:51:18 [main] INFO  base.BaseTest - 🏁 Starting Step Sequence Loop Row for Passenger: Amit_Sharma_$$
+2026-06-08 14:51:23 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: AmitSharma_Registration_419_Error
+2026-06-08 14:51:25 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: AmitSharma_Login_419_Error
+2026-06-08 14:51:25 [main] INFO  base.BaseTest - 🏁 Starting Step Sequence Loop Row for Passenger: <Admin>
+2026-06-08 14:51:30 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: Admin_Registration_419_Error
+2026-06-08 14:51:31 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: Admin_Login_419_Error
+2026-06-08 14:51:32 [main] INFO  base.BaseTest - 🛫 Step 2: Running route mapping: Boston -> Berlin
+2026-06-08 14:51:33 [main] INFO  base.BaseTest - 🔍 Step 3: Verifying flight grid matching options.
+2026-06-08 14:51:34 [main] INFO  base.BaseTest - 💵 Step 4: Injecting boundaries parameters for: <Admin>
+2026-06-08 14:52:07 [main] INFO  base.BaseTest - Browser instance terminated cleanly.
+2026-06-08 14:58:11 [main] INFO  base.BaseTest - Initializing browser automation setup.
+2026-06-08 14:58:18 [main] INFO  base.BaseTest - Chrome Browser launched and maximized successfully.
+2026-06-08 14:58:18 [main] INFO  base.BaseTest - Starting Step 1: Running Portal Security Check (Once).
+2026-06-08 14:58:27 [main] INFO  base.BaseTest - Injecting hardcoded registration placeholders.
+2026-06-08 14:58:29 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: Registration_419_Error_Page
+2026-06-08 14:58:30 [main] INFO  base.BaseTest - Injecting hardcoded login placeholders.
+2026-06-08 14:58:31 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: Login_419_Error_Page
+2026-06-08 14:58:32 [main] INFO  base.BaseTest - Step 1 Complete. Browser context resting clean on landing page.
+2026-06-08 14:58:34 [main] INFO  base.BaseTest - Starting Step 2: Selecting Route -> Paris to London
+2026-06-08 14:58:36 [main] INFO  base.BaseTest - Starting Step 2: Selecting Route -> Portland to Rome
+2026-06-08 14:58:47 [main] INFO  base.BaseTest - Starting Step 2: Selecting Route -> Boston to Berlin
+2026-06-08 14:59:04 [main] INFO  base.BaseTest - Browser instance terminated cleanly.
+2026-06-08 15:12:58 [main] INFO  base.BaseTest - Initializing browser automation setup.
+2026-06-08 15:13:15 [main] INFO  base.BaseTest - Chrome Browser launched and maximized successfully.
+2026-06-08 15:13:15 [main] INFO  base.BaseTest - 🎯 Starting Step 1: Portal Security Regression Sweep (Once).
+2026-06-08 15:13:15 [main] INFO  base.BaseTest - Navigating session directly to application index: https://blazedemo.com/index.php
+2026-06-08 15:13:22 [main] INFO  base.BaseTest - Injecting hardcoded registration parameters.
+2026-06-08 15:13:25 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: Registration_419_Error_Page
+2026-06-08 15:13:26 [main] INFO  base.BaseTest - Injecting hardcoded login parameters.
+2026-06-08 15:13:28 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: Login_419_Error_Page
+2026-06-08 15:13:28 [main] INFO  base.BaseTest - Step 1 Complete. Base browser view anchoring cleanly on root landing grid.
+2026-06-08 15:13:30 [main] INFO  base.BaseTest - Browser instance terminated cleanly.
+2026-06-08 15:20:01 [main] INFO  base.BaseTest - Initializing browser automation setup.
+2026-06-08 15:20:12 [main] INFO  base.BaseTest - Chrome Browser launched and maximized successfully.
+2026-06-08 15:20:12 [main] INFO  base.BaseTest - 🎯 Starting Step 1: Portal Security Regression Sweep (Once).
+2026-06-08 15:20:12 [main] INFO  base.BaseTest - Navigating session directly to application index: https://blazedemo.com/index.php
+2026-06-08 15:20:21 [main] INFO  base.BaseTest - Injecting hardcoded registration placeholders.
+2026-06-08 15:20:24 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: Registration_419_Error_Page
+2026-06-08 15:20:24 [main] INFO  base.BaseTest - Registration 419 Page Verified Successfully.
+2026-06-08 15:20:24 [main] INFO  base.BaseTest - Injecting hardcoded login placeholders.
+2026-06-08 15:20:26 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: Login_419_Error_Page
+2026-06-08 15:20:26 [main] INFO  base.BaseTest - Login 419 Page Verified Successfully.
+2026-06-08 15:20:26 [main] INFO  base.BaseTest - Step 1 Complete. Base browser view anchoring cleanly on root landing grid.
+2026-06-08 15:20:29 [main] INFO  base.BaseTest - 🔄 Running Suite Loop for Excel Data Row Index: [1 of 3]
+2026-06-08 15:20:29 [main] INFO  base.BaseTest - Starting Step 2: Selecting Route -> Paris to London
+2026-06-08 15:20:31 [main] INFO  base.BaseTest - Starting Step 3: Verifying flight grid selection tables.
+2026-06-08 15:20:32 [main] INFO  base.BaseTest - Starting Step 4: Injecting passenger details for profile: John##Doe!!
+2026-06-08 15:20:34 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: FormInputCheckpoint_Passenger_JohnDoe
+2026-06-08 15:20:36 [main] INFO  base.BaseTest - Starting Step 5: Asserting completion receipts for passenger: John##Doe!!
+2026-06-08 15:20:36 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: FinalBookingConfirmationReceipt_JohnDoe
+2026-06-08 15:20:46 [main] INFO  base.BaseTest - Browser instance terminated cleanly.
+2026-06-08 15:47:35 [main] INFO  base.BaseTest - Initializing browser automation setup.
+2026-06-08 15:47:47 [main] INFO  base.BaseTest - Chrome Browser launched and maximized successfully.
+2026-06-08 15:47:47 [main] INFO  base.BaseTest - 🎯 Starting Step 1: Portal Security Regression Sweep (Once).
+2026-06-08 15:47:47 [main] INFO  base.BaseTest - Navigating session directly to application index: https://blazedemo.com/index.php
+2026-06-08 15:48:00 [main] INFO  base.BaseTest - Injecting hardcoded registration placeholders.
+2026-06-08 15:48:04 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: Registration_419_Error_Page
+2026-06-08 15:48:04 [main] INFO  base.BaseTest - Registration 419 Page Verified Successfully.
+2026-06-08 15:48:04 [main] INFO  base.BaseTest - Injecting hardcoded login placeholders.
+2026-06-08 15:48:05 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: Login_419_Error_Page
+2026-06-08 15:48:06 [main] INFO  base.BaseTest - Login 419 Page Verified Successfully.
+2026-06-08 15:48:06 [main] INFO  base.BaseTest - Step 1 Complete. Base browser view anchoring cleanly on root landing grid.
+2026-06-08 15:48:09 [main] INFO  base.BaseTest - 🛫 Step 2: Selecting Route -> Paris to London
+2026-06-08 15:48:10 [main] INFO  base.BaseTest - Starting Step 3: Verifying flight grid selection tables.
+2026-06-08 15:48:11 [main] INFO  base.BaseTest - 💵 Step 4: Injecting passenger details for: John##Doe!!
+2026-06-08 15:48:13 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: FormInputCheckpoint_Passenger_JohnDoe
+2026-06-08 15:48:14 [main] INFO  base.BaseTest - Starting Step 5: Asserting completion receipts for passenger: John##Doe!!
+2026-06-08 15:48:14 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: FinalBookingConfirmationReceipt_JohnDoe
+2026-06-08 15:48:30 [main] INFO  base.BaseTest - Browser instance terminated cleanly.
+2026-06-08 15:57:47 [main] INFO  base.BaseTest - Initializing browser automation setup.
+2026-06-08 15:57:53 [main] INFO  base.BaseTest - Chrome Browser launched and maximized successfully.
+2026-06-08 15:57:53 [main] INFO  base.BaseTest - 🎯 Starting Step 1: Portal Security Regression Sweep (Once).
+2026-06-08 15:57:53 [main] INFO  base.BaseTest - Navigating session directly to application index: https://blazedemo.com/index.php
+2026-06-08 15:58:02 [main] INFO  base.BaseTest - Injecting hardcoded registration placeholders.
+2026-06-08 15:58:06 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: Registration_419_Error_Page
+2026-06-08 15:58:07 [main] INFO  base.BaseTest - Browser instance terminated cleanly.
+2026-06-08 15:58:55 [main] INFO  base.BaseTest - Initializing browser automation setup.
+2026-06-08 15:59:00 [main] INFO  base.BaseTest - Chrome Browser launched and maximized successfully.
+2026-06-08 15:59:00 [main] INFO  base.BaseTest - 🎯 Starting Step 1: Portal Security Regression Sweep (Once).
+2026-06-08 15:59:00 [main] INFO  base.BaseTest - Navigating session directly to application index: https://blazedemo.com/index.php
+2026-06-08 15:59:08 [main] INFO  base.BaseTest - Injecting hardcoded registration placeholders.
+2026-06-08 15:59:10 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: Registration_419_Error_Page
+2026-06-08 15:59:10 [main] INFO  base.BaseTest - Registration 419 Page Verified Successfully.
+2026-06-08 15:59:11 [main] INFO  base.BaseTest - Injecting hardcoded login placeholders.
+2026-06-08 15:59:12 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: Login_419_Error_Page
+2026-06-08 15:59:12 [main] INFO  base.BaseTest - Login 419 Page Verified Successfully.
+2026-06-08 15:59:12 [main] INFO  base.BaseTest - Step 1 Complete. Base browser view anchoring cleanly on root landing grid.
+2026-06-08 15:59:14 [main] INFO  base.BaseTest - 🛫 Step 2: Selecting Route -> Paris to London
+2026-06-08 15:59:16 [main] INFO  base.BaseTest - Starting Step 3: Verifying flight grid selection tables.
+2026-06-08 15:59:17 [main] INFO  base.BaseTest - 💵 Step 4: Injecting passenger details for: John##Doe!!
+2026-06-08 15:59:19 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: FormInputCheckpoint_Passenger_JohnDoe
+2026-06-08 15:59:20 [main] INFO  base.BaseTest - Starting Step 5: Asserting completion receipts for passenger: John##Doe!!
+2026-06-08 15:59:20 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: FinalBookingConfirmationReceipt_JohnDoe
+2026-06-08 15:59:20 [main] INFO  base.BaseTest - 🔄 Row validation complete. Resetting browser context back to index landing page for next data row sequence.
+2026-06-08 15:59:21 [main] INFO  base.BaseTest - 🛫 Step 2: Selecting Route -> Portland to Rome
+2026-06-08 15:59:23 [main] INFO  base.BaseTest - Starting Step 3: Verifying flight grid selection tables.
+2026-06-08 15:59:24 [main] INFO  base.BaseTest - 💵 Step 4: Injecting passenger details for: Amit_Sharma_$$
+2026-06-08 15:59:47 [main] INFO  base.BaseTest - Browser instance terminated cleanly.
+2026-06-08 16:05:25 [main] INFO  base.BaseTest - Initializing browser automation setup.
+2026-06-08 16:05:33 [main] INFO  base.BaseTest - Chrome Browser launched and maximized successfully.
+2026-06-08 16:05:34 [main] INFO  base.BaseTest - 🎯 Starting Step 1: Portal Security Regression Sweep (Once).
+2026-06-08 16:05:34 [main] INFO  base.BaseTest - Navigating session directly to application index: https://blazedemo.com/index.php
+2026-06-08 16:05:49 [main] INFO  base.BaseTest - Injecting hardcoded registration placeholders.
+2026-06-08 16:06:04 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: Registration_419_Error_Page
+2026-06-08 16:06:04 [main] INFO  base.BaseTest - Registration 419 Page Verified Successfully.
+2026-06-08 16:06:04 [main] INFO  base.BaseTest - Injecting hardcoded login placeholders.
+2026-06-08 16:06:06 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: Login_419_Error_Page
+2026-06-08 16:06:06 [main] INFO  base.BaseTest - Login 419 Page Verified Successfully.
+2026-06-08 16:06:06 [main] INFO  base.BaseTest - Step 1 Complete. Base browser view anchoring cleanly on root landing grid.
+2026-06-08 16:06:09 [main] INFO  base.BaseTest - 🛫 Step 2: Selecting Route -> Paris to London
+2026-06-08 16:06:11 [main] INFO  base.BaseTest - Starting Step 3: Verifying flight grid selection tables.
+2026-06-08 16:06:12 [main] INFO  base.BaseTest - 💵 Step 4: Injecting passenger details for: John##Doe!!
+2026-06-08 16:06:14 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: FormInputCheckpoint_Passenger_JohnDoe
+2026-06-08 16:06:15 [main] INFO  base.BaseTest - Starting Step 5: Asserting completion receipts for passenger: John##Doe!!
+2026-06-08 16:06:15 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: FinalBookingConfirmationReceipt_JohnDoe
+2026-06-08 16:06:15 [main] INFO  base.BaseTest - 🔄 Row 1 complete. Resetting for next dataset.
+2026-06-08 16:06:16 [main] INFO  base.BaseTest - 🛫 Step 2: Selecting Route -> Portland to Rome
+2026-06-08 16:06:17 [main] INFO  base.BaseTest - Starting Step 3: Verifying flight grid selection tables.
+2026-06-08 16:06:18 [main] INFO  base.BaseTest - 💵 Step 4: Injecting passenger details for: Amit_Sharma_$$
+2026-06-08 16:06:30 [main] INFO  base.BaseTest - Browser instance terminated cleanly.
+2026-06-08 16:25:03 [main] INFO  base.BaseTest - Initializing browser automation setup.
+2026-06-08 16:25:10 [main] INFO  base.BaseTest - Chrome Browser launched and maximized successfully.
+2026-06-08 16:25:10 [main] INFO  base.BaseTest - 🎯 Starting Step 1: Portal Security Regression Sweep (Once).
+2026-06-08 16:25:10 [main] INFO  base.BaseTest - Navigating session directly to application index: https://blazedemo.com/index.php
+2026-06-08 16:25:17 [main] INFO  base.BaseTest - Injecting hardcoded registration placeholders.
+2026-06-08 16:25:19 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: Registration_419_Error_Page
+2026-06-08 16:25:20 [main] INFO  base.BaseTest - Registration 419 Page Verified Successfully.
+2026-06-08 16:25:20 [main] INFO  base.BaseTest - Injecting hardcoded login placeholders.
+2026-06-08 16:25:20 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: Login_419_Error_Page
+2026-06-08 16:25:21 [main] INFO  base.BaseTest - Login 419 Page Verified Successfully.
+2026-06-08 16:25:21 [main] INFO  base.BaseTest - Step 1 Complete. Base browser view anchoring cleanly on root landing grid.
+2026-06-08 16:25:23 [main] INFO  base.BaseTest - 🛫 Step 2: Selecting Route -> Paris to London
+2026-06-08 16:25:25 [main] INFO  base.BaseTest - Starting Step 3: Verifying flight grid selection tables.
+2026-06-08 16:25:25 [main] INFO  base.BaseTest - 💵 Step 4: Injecting passenger details for: John##Doe!!
+2026-06-08 16:25:27 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: FormInputCheckpoint_Passenger_JohnDoe
+2026-06-08 16:25:28 [main] INFO  base.BaseTest - Starting Step 5: Asserting completion receipts for passenger: John##Doe!!
+2026-06-08 16:25:28 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: FinalBookingConfirmationReceipt_JohnDoe
+2026-06-08 16:25:29 [main] INFO  base.BaseTest - 🔄 Row 1 complete. Resetting for next dataset.
+2026-06-08 16:25:29 [main] INFO  base.BaseTest - 🛫 Step 2: Selecting Route -> Portland to Rome
+2026-06-08 16:25:30 [main] INFO  base.BaseTest - Starting Step 3: Verifying flight grid selection tables.
+2026-06-08 16:25:31 [main] INFO  base.BaseTest - 💵 Step 4: Injecting passenger details for: Amit_Sharma_$$
+2026-06-08 16:25:32 [main] WARN  pages.PurchasePage - Card type 'Mastercard' not found. Defaulting to 'Visa'.
+2026-06-08 16:25:32 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: FormInputCheckpoint_Passenger_AmitSharma
+2026-06-08 16:25:33 [main] INFO  base.BaseTest - Starting Step 5: Asserting completion receipts for passenger: Amit_Sharma_$$
+2026-06-08 16:25:33 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: FinalBookingConfirmationReceipt_AmitSharma
+2026-06-08 16:25:33 [main] INFO  base.BaseTest - 🔄 Row 2 complete. Resetting for next dataset.
+2026-06-08 16:25:34 [main] INFO  base.BaseTest - 🛫 Step 2: Selecting Route -> Boston to Berlin
+2026-06-08 16:25:35 [main] INFO  base.BaseTest - Starting Step 3: Verifying flight grid selection tables.
+2026-06-08 16:25:36 [main] INFO  base.BaseTest - 💵 Step 4: Injecting passenger details for: <Admin>
+2026-06-08 16:25:37 [main] WARN  pages.PurchasePage - Card type 'American Express' not found. Defaulting to 'Visa'.
+2026-06-08 16:25:38 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: FormInputCheckpoint_Passenger_Admin
+2026-06-08 16:25:39 [main] INFO  base.BaseTest - Starting Step 5: Asserting completion receipts for passenger: <Admin>
+2026-06-08 16:25:39 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: FinalBookingConfirmationReceipt_Admin
+2026-06-08 16:25:39 [main] INFO  base.BaseTest - 🏁 Success: All rows processed.
+2026-06-08 16:25:53 [main] INFO  base.BaseTest - Browser instance terminated cleanly.

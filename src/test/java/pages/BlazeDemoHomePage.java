@@ -11,9 +11,18 @@ public class BlazeDemoHomePage {
     private By departureDropdown = By.name("fromPort");
     private By destinationDropdown = By.name("toPort");
     private By findFlightsButton = By.cssSelector("input[type='submit'].btn-primary");
+    private By homeButtonLink = By.linkText("home");
 
     public BlazeDemoHomePage(WebDriver driver) {
         this.driver = driver;
+    }
+
+    /**
+     * Navigates out of the flight booking path and jumps directly 
+     * to the Login/Registration sub-portal views.
+     */
+    public void clickHomeButtonLink() {
+        WaitUtils.waitForElementClickable(driver, homeButtonLink, 10).click();
     }
 
     public void selectDepartureCity(String departure) {

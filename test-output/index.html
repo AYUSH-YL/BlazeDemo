@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,27 @@
                     <div class="method-list-content passed suite-BlazeDemo_Booking_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-BlazeDemo_Booking_Suite" title="testcases.BlazeDemoTest" class="method navigator-link" hash-for-method="testFlightBookingJourney(Paris, Buenos Aires, John Doe, 123 Main St, Anytown, State, 12345, Visa, 4242 4242 4242 4242, John D...)">testFlightBookingJourney(Paris, Buenos Aires, John Doe, 123 Main St, Anytown, State, 12345, Visa, 4242 4242 4242 4242, John D...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-BlazeDemo_Booking_Suite" title="testcases.BlazeDemoTest" class="method navigator-link" hash-for-method="step1_validateBrokenPortalGateways">step1_validateBrokenPortalGateways</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BlazeDemo_Booking_Suite" title="testcases.BlazeDemoTest" class="method navigator-link" hash-for-method="step2_searchFlights">step2_searchFlights</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BlazeDemo_Booking_Suite" title="testcases.BlazeDemoTest" class="method navigator-link" hash-for-method="step3_validateAndSelectFlight">step3_validateAndSelectFlight</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BlazeDemo_Booking_Suite" title="testcases.BlazeDemoTest" class="method navigator-link" hash-for-method="step4_fillPassengerFormAndBook">step4_fillPassengerFormAndBook</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BlazeDemo_Booking_Suite" title="testcases.BlazeDemoTest" class="method navigator-link" hash-for-method="step5_validateConfirmationReceipt">step5_validateConfirmationReceipt</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-BlazeDemo_Booking_Suite -->
@@ -126,10 +146,37 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testFlightBookingJourney(Paris, Buenos Aires, John Doe, 123 Main St, Anytown, State, 12345, Visa, 4242 4242 4242 4242, John D...)">
-                  </a> <!-- testFlightBookingJourney(Paris, Buenos Aires, John Doe, 123 Main St, Anytown, State, 12345, Visa, 4242 4242 4242 4242, John D...) -->
-                  <span class="method-name">testFlightBookingJourney</span>
-                  <span class="parameters">(Paris,Buenos Aires,John Doe,123 Main St,Anytown,State,12345,Visa,4242 4242 4242 4242,John Doe)</span>
+                  <a name="step1_validateBrokenPortalGateways">
+                  </a> <!-- step1_validateBrokenPortalGateways -->
+                  <span class="method-name">step1_validateBrokenPortalGateways</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="step2_searchFlights">
+                  </a> <!-- step2_searchFlights -->
+                  <span class="method-name">step2_searchFlights</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="step3_validateAndSelectFlight">
+                  </a> <!-- step3_validateAndSelectFlight -->
+                  <span class="method-name">step3_validateAndSelectFlight</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="step4_fillPassengerFormAndBook">
+                  </a> <!-- step4_fillPassengerFormAndBook -->
+                  <span class="method-name">step4_fillPassengerFormAndBook</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="step5_validateConfirmationReceipt">
+                  </a> <!-- step5_validateConfirmationReceipt -->
+                  <span class="method-name">step5_validateConfirmationReceipt</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -143,7 +190,7 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;BlazeDemo Booking Suite&quot;&gt;
+&lt;suite name=&quot;BlazeDemo Booking Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;listeners.MyListeners&quot;/&gt;
   &lt;/listeners&gt;
@@ -182,7 +229,23 @@
               <span class="test-group-name">end-to-end</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">testFlightBookingJourney</span>
+                <span class="method-in-group-name">step1_validateBrokenPortalGateways</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">step2_searchFlights</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">step3_validateAndSelectFlight</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">step4_fillPassengerFormAndBook</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">step5_validateConfirmationReceipt</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -202,16 +265,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testFlightBookingJourney')
+data.setCell(0, 1, 'step1_validateBrokenPortalGateways')
 data.setCell(0, 2, 'testcases.BlazeDemoTest')
-data.setCell(0, 3, 5715);
+data.setCell(0, 3, 12972);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'step5_validateConfirmationReceipt')
+data.setCell(1, 2, 'testcases.BlazeDemoTest')
+data.setCell(1, 3, 10829);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'step4_fillPassengerFormAndBook')
+data.setCell(2, 2, 'testcases.BlazeDemoTest')
+data.setCell(2, 3, 2745);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'step2_searchFlights')
+data.setCell(3, 2, 'testcases.BlazeDemoTest')
+data.setCell(3, 3, 1335);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'step3_validateAndSelectFlight')
+data.setCell(4, 2, 'testcases.BlazeDemoTest')
+data.setCell(4, 3, 780);
 window.suiteTableData['BlazeDemo_Booking_Suite']= { tableData: data, tableDiv: 'times-div-BlazeDemo_Booking_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 28 seconds</span>
               <div id="times-div-BlazeDemo_Booking_Suite">
               </div> <!-- times-div-BlazeDemo_Booking_Suite -->
             </div> <!-- times-div -->
@@ -243,12 +322,28 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">testFlightBookingJourney(Paris, Buenos Aires, John Doe, 123 Main St, Anytown, State, 12345, Visa, 4242 4242 4242 4242, John D...)</span>
-                <span class="method-start">7285 ms</span>
+                <span class="method-name">step1_validateBrokenPortalGateways</span>
+                <span class="method-start">7171 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">step2_searchFlights</span>
+                <span class="method-start">20177 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">step3_validateAndSelectFlight</span>
+                <span class="method-start">21519 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">step4_fillPassengerFormAndBook</span>
+                <span class="method-start">22308 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">step5_validateConfirmationReceipt</span>
+                <span class="method-start">25059 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">13023 ms</span>
+                <span class="method-start">35896 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

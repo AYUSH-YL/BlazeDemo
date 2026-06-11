@@ -1,76 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-06T12:22:29 IST" name="BlazeDemo Booking Suite" finished-at="2026-06-06T12:22:44 IST" duration-ms="14648">
+  <suite started-at="2026-06-08T16:25:02 IST" name="BlazeDemo Booking Suite" finished-at="2026-06-08T16:25:53 IST" duration-ms="50400">
     <groups>
       <group name="end-to-end">
-        <method signature="BlazeDemoTest.testFlightBookingJourney(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.BlazeDemoTest@61c9c3fd]" name="testFlightBookingJourney" class="testcases.BlazeDemoTest"/>
+        <method signature="BlazeDemoTest.step1_validateBrokenPortalGateways()[pri:1, instance:testcases.BlazeDemoTest@ccb4b1b]" name="step1_validateBrokenPortalGateways" class="testcases.BlazeDemoTest"/>
+        <method signature="BlazeDemoTest.step2_searchFlights()[pri:2, instance:testcases.BlazeDemoTest@ccb4b1b]" name="step2_searchFlights" class="testcases.BlazeDemoTest"/>
+        <method signature="BlazeDemoTest.step3_validateAndSelectFlight()[pri:3, instance:testcases.BlazeDemoTest@ccb4b1b]" name="step3_validateAndSelectFlight" class="testcases.BlazeDemoTest"/>
+        <method signature="BlazeDemoTest.step4_fillPassengerFormAndBook()[pri:4, instance:testcases.BlazeDemoTest@ccb4b1b]" name="step4_fillPassengerFormAndBook" class="testcases.BlazeDemoTest"/>
+        <method signature="BlazeDemoTest.step5_validateConfirmationReceipt()[pri:5, instance:testcases.BlazeDemoTest@ccb4b1b]" name="step5_validateConfirmationReceipt" class="testcases.BlazeDemoTest"/>
       </group> <!-- end-to-end -->
     </groups>
-    <test started-at="2026-06-06T12:22:29 IST" name="End To End Flight Booking Test" finished-at="2026-06-06T12:22:44 IST" duration-ms="14648">
+    <test started-at="2026-06-08T16:25:02 IST" name="End To End Flight Booking Test" finished-at="2026-06-08T16:25:53 IST" duration-ms="50400">
       <class name="testcases.BlazeDemoTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.BlazeDemoTest@61c9c3fd]" started-at="2026-06-06T12:22:30 IST" name="setUp" finished-at="2026-06-06T12:22:35 IST" duration-ms="5114" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.BlazeDemoTest@ccb4b1b]" started-at="2026-06-08T16:25:03 IST" name="setUp" finished-at="2026-06-08T16:25:10 IST" duration-ms="7090" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testFlightBookingJourney(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.BlazeDemoTest@61c9c3fd]" started-at="2026-06-06T12:22:37 IST" name="testFlightBookingJourney" data-provider="bookingData" finished-at="2026-06-06T12:22:43 IST" duration-ms="5715" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Paris]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Buenos Aires]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[John Doe]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[123 Main St]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Anytown]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[State]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[12345]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Visa]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[4242 4242 4242 4242]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[John Doe]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="step1_validateBrokenPortalGateways()[pri:1, instance:testcases.BlazeDemoTest@ccb4b1b]" started-at="2026-06-08T16:25:10 IST" name="step1_validateBrokenPortalGateways" finished-at="2026-06-08T16:25:23 IST" duration-ms="12972" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testFlightBookingJourney -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.BlazeDemoTest@61c9c3fd]" started-at="2026-06-06T12:22:43 IST" name="tearDown" finished-at="2026-06-06T12:22:44 IST" duration-ms="974" status="PASS">
+        </test-method> <!-- step1_validateBrokenPortalGateways -->
+        <test-method signature="step2_searchFlights()[pri:2, instance:testcases.BlazeDemoTest@ccb4b1b]" started-at="2026-06-08T16:25:23 IST" name="step2_searchFlights" finished-at="2026-06-08T16:25:25 IST" depends-on-methods="testcases.BlazeDemoTest.step1_validateBrokenPortalGateways" duration-ms="1335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step2_searchFlights -->
+        <test-method signature="step3_validateAndSelectFlight()[pri:3, instance:testcases.BlazeDemoTest@ccb4b1b]" started-at="2026-06-08T16:25:25 IST" name="step3_validateAndSelectFlight" finished-at="2026-06-08T16:25:25 IST" depends-on-methods="testcases.BlazeDemoTest.step2_searchFlights" duration-ms="780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step3_validateAndSelectFlight -->
+        <test-method signature="step4_fillPassengerFormAndBook()[pri:4, instance:testcases.BlazeDemoTest@ccb4b1b]" started-at="2026-06-08T16:25:25 IST" name="step4_fillPassengerFormAndBook" finished-at="2026-06-08T16:25:28 IST" depends-on-methods="testcases.BlazeDemoTest.step3_validateAndSelectFlight" duration-ms="2745" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step4_fillPassengerFormAndBook -->
+        <test-method signature="step5_validateConfirmationReceipt()[pri:5, instance:testcases.BlazeDemoTest@ccb4b1b]" started-at="2026-06-08T16:25:28 IST" name="step5_validateConfirmationReceipt" finished-at="2026-06-08T16:25:39 IST" depends-on-methods="testcases.BlazeDemoTest.step4_fillPassengerFormAndBook" duration-ms="10829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step5_validateConfirmationReceipt -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.BlazeDemoTest@ccb4b1b]" started-at="2026-06-08T16:25:39 IST" name="tearDown" finished-at="2026-06-08T16:25:53 IST" duration-ms="13703" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
