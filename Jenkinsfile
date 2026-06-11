@@ -1,57 +1,53 @@
 pipeline {
     agent any
 
-    tools {
-        // Must match the exact name given to your Maven installation in Jenkins Global Tool Configuration
-        maven 'Maven3' 
-    }
-
-    environment {
-        // Ensures clean command execution flags across operating systems
-        MAVEN_OPTS = '-Dfile.encoding=UTF-8'
-    }
-
     stages {
-        stage('Environment Verification') {
+        stage('Docker Environment Verification') {
             steps {
-                echo 'Checking software environment baselines...'
-                bat 'mvn --version'
-                bat 'java -version'
+                echo 'Verifying that Jenkins has access to the local Docker engine daemon...'
+                bat 'docker --version'
             }
         }
 
-        stage('Compile Code') {
+        stage('Docker Build Lifecycle') {
             steps {
-                echo 'Compiling project target definitions...'
-                bat 'mvn clean compile'
+                echo 'Compiling image artifact layer from project Dockerfile specifications...'
+                bat 'docker build -t testng-framework .'
             }
         }
 
-        stage('Regression Suite Execution') {
+        stage('Docker Container Regression Run') {
             steps {
-                echo 'Launching Data-Driven Selenium Tests via testng.xml...'
-                // runs target test phase and continues if assertion mismatches surface
-                bat 'mvn test'
+                echo 'Spanning up sandboxed container node to launch TestNG framework headless suite...'
+                // Giving the execution container a specific static name makes file extraction incredibly easy
+                bat 'docker run --name blazedemo-run testng-framework'
             }
         }
     }
 
     post {
         always {
-            echo 'Processing test artifacts and compiling metrics...'
+            echo 'Extracting isolated test results and screenshots from inside the closed container instance...'
             
-            // 1. Parse JUnit/TestNG target XML results into the native Jenkins UI dashboard trends
+            // 🚨 CRITICAL: Because the tests ran inside an isolated container, we must programmatically 
+            // extract (copy) the screenshots, reports, and logs back to the Jenkins host workspace before removing it!
+            bat 'docker cp blazedemo-run:/app/screenshots ./screenshots'
+            bat 'docker cp blazedemo-run:/app/target/ExtentReport.html ./target/ExtentReport.html'
+            bat 'docker cp blazedemo-run:/app/target/surefire-reports ./target/surefire-reports'
+            
+            echo 'Cleaning up execution workspace nodes...'
+            bat 'docker rm blazedemo-run'
+            
+            // Let Jenkins read and present the pulled reports and assets natively on the build dashboard page
             junit '**/target/surefire-reports/*.xml'
-            
-            // 2. Archive your manual checkpoint images and ExtentReport dashboard files for easy download
             archiveArtifacts artifacts: 'screenshots/**/*', allowEmptyArchive: true
             archiveArtifacts artifacts: 'target/ExtentReport.html', allowEmptyArchive: true
         }
         success {
-            echo '✨ All test steps passed successfully! Booking channel cycle verified.'
+            echo '✨ Success: Containerized pipeline execution passed completely!'
         }
         failure {
-            echo '❌ Regression anomalies detected. Review archived reports and screenshots.'
+            echo '❌ Error: Regression failure detected during isolated execution.'
         }
     }
 }

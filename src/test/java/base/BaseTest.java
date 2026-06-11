@@ -23,10 +23,22 @@ public class BaseTest {
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
         
+        // 🐳 DOCKER ENV DETECTION CHECK
+        // If the 'RUNNING_IN_DOCKER' environment variable from our Dockerfile exists,
+        // force headless execution parameters so it doesn't crash.
+        if (System.getenv("RUNNING_IN_DOCKER") != null) {
+            log.info("System environment variable detected: Docker Pipeline. Forcing headless configuration flags.");
+            options.addArguments("--headless=new");
+            options.addArguments("--disable-gpu");
+            options.addArguments("--window-size=1920,1080");
+        } else {
+            log.info("System environment variable missing: Local Eclipse Sandbox. Launching visible GUI browser panel.");
+        }
+        
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         
-        log.info("Chrome Browser launched and maximized successfully.");
+        log.info("Chrome Browser instance initialized successfully.");
     }
 
     @AfterClass(alwaysRun = true)
