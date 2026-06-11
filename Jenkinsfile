@@ -23,6 +23,16 @@ pipeline {
                 bat 'docker run --name blazedemo-run testng-framework'
             }
         }
+        stage('Docker Container Regression Run') {
+            steps {
+                echo 'Clearing any stale containers from prior failed pipeline runs...'
+                // The || ver tag ensures that if no stale container exists, the pipeline won't crash
+                bat 'docker rm -f blazedemo-run || ver>nul'
+
+                echo 'Spanning up sandboxed container node to launch TestNG framework headless suite...'
+                bat 'docker run --name blazedemo-run testng-framework'
+            }
+        }
     }
 
     post {
