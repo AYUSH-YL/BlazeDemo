@@ -11,17 +11,13 @@
       </run>
     </groups>
     <classes>
-      <class name="testcases.BlazeDemoTest">
+      <class name="testcases.LoginTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="step5_validateConfirmationReceipt"/>
-          <include name="step3_validateAndSelectFlight"/>
-          <include name="step2_searchFlights"/>
-          <include name="step4_fillPassengerFormAndBook"/>
-          <include name="step1_validateBrokenPortalGateways"/>
+          <include name="validateBrokenPortalGateways"/>
         </methods>
-      </class> <!-- testcases.BlazeDemoTest -->
+      </class> <!-- testcases.LoginTest -->
     </classes>
   </test> <!-- End To End Flight Booking Test(failed) -->
 </suite> <!-- Failed suite [BlazeDemo Booking Suite] -->
