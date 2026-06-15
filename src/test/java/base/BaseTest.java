@@ -65,7 +65,7 @@ public class BaseTest {
                 break;
 
             default:
-                log.error("CRITICAL error: Unsupported Browser variant requested: " + browser);
+                log.error("CRITICAL error: Unsupported Browser requested: " + browser);
                 throw new RuntimeException("Unsupported Browser framework assignment: " + browser);
         }
         

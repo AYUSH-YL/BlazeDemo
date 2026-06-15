@@ -16,7 +16,7 @@ public class LoginTest extends BaseTest {
         log.info("Starting Portal Security Regression Sweep (Once).");
         
         String appUrl = utilities.ConfigReader.getUrl();
-        log.info("Navigating session directly to application index: " + appUrl);
+        log.info("Navigating directly to application index: " + appUrl);
         driver.get(appUrl);
         
         homePage = new BlazeDemoHomePage(driver);
@@ -30,7 +30,7 @@ public class LoginTest extends BaseTest {
         
         takeCheckpointScreenshot("Registration_419_Error_Page");
         Assert.assertTrue(portalPage.verify419ErrorPageState(), "Error: Registration failed to trigger a 419 Page state.");
-        log.info("Registration 419 Page Verified Successfully.");
+        log.info("Known error : Registration 419 Page.");
         
         portalPage.navigateBackTwoSteps();
         
@@ -39,9 +39,9 @@ public class LoginTest extends BaseTest {
         
         takeCheckpointScreenshot("Login_419_Error_Page");
         Assert.assertTrue(portalPage.verify419ErrorPageState(), "Error: Login failed to trigger a 419 Page state.");
-        log.info("Login 419 Page Verified Successfully.");
+        log.info("Known error : 419 Page.");
         
         portalPage.navigateBackTwoSteps();
-        log.info("Portal Sweep Complete. Session safely anchored on root landing grid.");
+        log.info("Portal Sweep Complete.");
     }
 }

@@ -36,7 +36,7 @@ public class BlazeDemoTest extends BaseTest {
 
     @BeforeClass(alwaysRun = true)
     public void initializeTestData() {
-        log.info("📊 Initializing Data Provider Streams for Flight Regression Suite.");
+        log.info("Initializing Data Provider Streams for Flight Regression Suite.");
         String excelPath = "src/test/resources/TestData.xlsx";
         String sheetName = "BookingSheet";
         globalTestDataMatrix = ExcelUtils.getTestData(excelPath, sheetName);
@@ -58,7 +58,7 @@ public class BlazeDemoTest extends BaseTest {
     }
 
     @Test(priority = 1, groups = { "end-to-end" })
-    public void step2_searchFlights() {
+    public void step2() {
         loadCurrentRowData();
         log.info("Selecting Route -> " + currentDeparture + " to " + currentDestination);
         
@@ -70,17 +70,17 @@ public class BlazeDemoTest extends BaseTest {
         homePage.clickFindFlights();
     }
 
-    @Test(priority = 2, dependsOnMethods = { "step2_searchFlights" }, groups = { "end-to-end" })
-    public void step3_validateAndSelectFlight() {
+    @Test(priority = 2, dependsOnMethods = { "step2" }, groups = { "end-to-end" })
+    public void step3() {
         log.info("Verifying flight grid selection tables.");
         flightListPage = new FlightListPage(driver);
         Assert.assertTrue(flightListPage.isFlightListDisplayed(), "Validation Failure: Flights listing matrix grid is missing.");
         flightListPage.chooseFirstAvailableFlight();
     }
 
-    @Test(priority = 3, dependsOnMethods = { "step3_validateAndSelectFlight" }, groups = { "end-to-end" })
-    public void step4_fillPassengerFormAndBook() {
-        log.info("Injecting passenger details for: " + currentName);
+    @Test(priority = 3, dependsOnMethods = { "step3" }, groups = { "end-to-end" })
+    public void step4() {
+        log.info("Filling passenger details for: " + currentName);
         purchasePage = new PurchasePage(driver);
         purchasePage.fillPersonalAndPaymentDetails(currentName, currentAddress, currentCity, 
                                                    currentState, currentZip, currentCardType, 
@@ -90,8 +90,8 @@ public class BlazeDemoTest extends BaseTest {
         purchasePage.clickPurchaseFlight();
     }
 
-    @Test(priority = 4, dependsOnMethods = { "step4_fillPassengerFormAndBook" }, groups = { "end-to-end" })
-    public void step5_validateConfirmationReceipt() {
+    @Test(priority = 4, dependsOnMethods = { "step4" }, groups = { "end-to-end" })
+    public void step5() {
         log.info("Asserting completion receipts for passenger: " + currentName);
         confirmationPage = new ConfirmationPage(driver);
         
@@ -104,10 +104,10 @@ public class BlazeDemoTest extends BaseTest {
         
         if (currentExcelRowPointer < totalExcelDataRows) {
             log.info("Row " + currentExcelRowPointer + " complete. Resetting for next dataset.");
-            step2_searchFlights();
-            step3_validateAndSelectFlight();
-            step4_fillPassengerFormAndBook();
-            step5_validateConfirmationReceipt();
+            step2();
+            step3();
+            step4();
+            step5();
         } else {
             log.info("Success: All rows processed.");
         }
