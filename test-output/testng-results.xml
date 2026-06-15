@@ -1,58 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-14T21:15:37 IST" name="BlazeDemo Booking Suite" finished-at="2026-06-14T21:16:52 IST" duration-ms="74859">
+  <suite started-at="2026-06-15T10:59:42 IST" name="BlazeDemo Booking Suite" finished-at="2026-06-15T11:01:03 IST" duration-ms="81003">
     <groups>
       <group name="end-to-end">
-        <method signature="BlazeDemoTest.step2_searchFlights()[pri:1, instance:testcases.BlazeDemoTest@4097cac]" name="step2_searchFlights" class="testcases.BlazeDemoTest"/>
-        <method signature="BlazeDemoTest.step3_validateAndSelectFlight()[pri:2, instance:testcases.BlazeDemoTest@4097cac]" name="step3_validateAndSelectFlight" class="testcases.BlazeDemoTest"/>
-        <method signature="BlazeDemoTest.step4_fillPassengerFormAndBook()[pri:3, instance:testcases.BlazeDemoTest@4097cac]" name="step4_fillPassengerFormAndBook" class="testcases.BlazeDemoTest"/>
-        <method signature="BlazeDemoTest.step5_validateConfirmationReceipt()[pri:4, instance:testcases.BlazeDemoTest@4097cac]" name="step5_validateConfirmationReceipt" class="testcases.BlazeDemoTest"/>
-        <method signature="LoginTest.validateBrokenPortalGateways()[pri:1, instance:testcases.LoginTest@61c9c3fd]" name="validateBrokenPortalGateways" class="testcases.LoginTest"/>
+        <method signature="BlazeDemoTest.step2_searchFlights()[pri:1, instance:testcases.BlazeDemoTest@69ce2f62, instance params:[Paris, London, John##Doe!!, 123 Tech Lane, Noida, UP, 201301, Visa, FOUR_ONE_ONE_ONE, John Doe]]" name="step2_searchFlights" class="testcases.BlazeDemoTest"/>
+        <method signature="BlazeDemoTest.step2_searchFlights()[pri:1, instance:testcases.BlazeDemoTest@6f012914, instance params:[Boston, Berlin, &lt;Admin&gt;, 789 Web Drive, Mumbai, MH, 400001, American Express, 0000AAAA0000, Admin]]" name="step2_searchFlights" class="testcases.BlazeDemoTest"/>
+        <method signature="BlazeDemoTest.step2_searchFlights()[pri:1, instance:testcases.BlazeDemoTest@c9d82f9, instance params:[Portland, Rome, Amit_Sharma_$$, 456 IT Hub, Bangalore, Karnataka, 560001, Mastercard, XYZ-INVALID-CARD, Amit Sharma]]" name="step2_searchFlights" class="testcases.BlazeDemoTest"/>
+        <method signature="BlazeDemoTest.step3_validateAndSelectFlight()[pri:2, instance:testcases.BlazeDemoTest@69ce2f62, instance params:[Paris, London, John##Doe!!, 123 Tech Lane, Noida, UP, 201301, Visa, FOUR_ONE_ONE_ONE, John Doe]]" name="step3_validateAndSelectFlight" class="testcases.BlazeDemoTest"/>
+        <method signature="BlazeDemoTest.step3_validateAndSelectFlight()[pri:2, instance:testcases.BlazeDemoTest@6f012914, instance params:[Boston, Berlin, &lt;Admin&gt;, 789 Web Drive, Mumbai, MH, 400001, American Express, 0000AAAA0000, Admin]]" name="step3_validateAndSelectFlight" class="testcases.BlazeDemoTest"/>
+        <method signature="BlazeDemoTest.step3_validateAndSelectFlight()[pri:2, instance:testcases.BlazeDemoTest@c9d82f9, instance params:[Portland, Rome, Amit_Sharma_$$, 456 IT Hub, Bangalore, Karnataka, 560001, Mastercard, XYZ-INVALID-CARD, Amit Sharma]]" name="step3_validateAndSelectFlight" class="testcases.BlazeDemoTest"/>
+        <method signature="BlazeDemoTest.step4_fillPassengerFormAndBook()[pri:3, instance:testcases.BlazeDemoTest@69ce2f62, instance params:[Paris, London, John##Doe!!, 123 Tech Lane, Noida, UP, 201301, Visa, FOUR_ONE_ONE_ONE, John Doe]]" name="step4_fillPassengerFormAndBook" class="testcases.BlazeDemoTest"/>
+        <method signature="BlazeDemoTest.step4_fillPassengerFormAndBook()[pri:3, instance:testcases.BlazeDemoTest@6f012914, instance params:[Boston, Berlin, &lt;Admin&gt;, 789 Web Drive, Mumbai, MH, 400001, American Express, 0000AAAA0000, Admin]]" name="step4_fillPassengerFormAndBook" class="testcases.BlazeDemoTest"/>
+        <method signature="BlazeDemoTest.step4_fillPassengerFormAndBook()[pri:3, instance:testcases.BlazeDemoTest@c9d82f9, instance params:[Portland, Rome, Amit_Sharma_$$, 456 IT Hub, Bangalore, Karnataka, 560001, Mastercard, XYZ-INVALID-CARD, Amit Sharma]]" name="step4_fillPassengerFormAndBook" class="testcases.BlazeDemoTest"/>
+        <method signature="BlazeDemoTest.step5_validateConfirmationReceipt()[pri:4, instance:testcases.BlazeDemoTest@69ce2f62, instance params:[Paris, London, John##Doe!!, 123 Tech Lane, Noida, UP, 201301, Visa, FOUR_ONE_ONE_ONE, John Doe]]" name="step5_validateConfirmationReceipt" class="testcases.BlazeDemoTest"/>
+        <method signature="BlazeDemoTest.step5_validateConfirmationReceipt()[pri:4, instance:testcases.BlazeDemoTest@6f012914, instance params:[Boston, Berlin, &lt;Admin&gt;, 789 Web Drive, Mumbai, MH, 400001, American Express, 0000AAAA0000, Admin]]" name="step5_validateConfirmationReceipt" class="testcases.BlazeDemoTest"/>
+        <method signature="BlazeDemoTest.step5_validateConfirmationReceipt()[pri:4, instance:testcases.BlazeDemoTest@c9d82f9, instance params:[Portland, Rome, Amit_Sharma_$$, 456 IT Hub, Bangalore, Karnataka, 560001, Mastercard, XYZ-INVALID-CARD, Amit Sharma]]" name="step5_validateConfirmationReceipt" class="testcases.BlazeDemoTest"/>
+        <method signature="LoginTest.validateBrokenPortalGateways()[pri:1, instance:testcases.LoginTest@522b2631]" name="validateBrokenPortalGateways" class="testcases.LoginTest"/>
       </group> <!-- end-to-end -->
     </groups>
-    <test started-at="2026-06-14T21:15:37 IST" name="End To End Flight Booking Test" finished-at="2026-06-14T21:16:52 IST" duration-ms="74859">
+    <test started-at="2026-06-15T10:59:42 IST" name="End To End Flight Booking Test" finished-at="2026-06-15T11:01:03 IST" duration-ms="81003">
       <class name="testcases.BlazeDemoTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.BlazeDemoTest@4097cac]" started-at="2026-06-14T21:16:05 IST" name="setUp" finished-at="2026-06-14T21:16:07 IST" duration-ms="2934" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.BlazeDemoTest@69ce2f62, instance params:[Paris, London, John##Doe!!, 123 Tech Lane, Noida, UP, 201301, Visa, FOUR_ONE_ONE_ONE, John Doe]]" started-at="2026-06-15T10:59:58 IST" name="setUp" finished-at="2026-06-15T11:00:01 IST" duration-ms="2878" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initializeTestData()[pri:0, instance:testcases.BlazeDemoTest@4097cac]" started-at="2026-06-14T21:16:07 IST" name="initializeTestData" finished-at="2026-06-14T21:16:10 IST" duration-ms="2191" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeTestData -->
-        <test-method signature="step2_searchFlights()[pri:1, instance:testcases.BlazeDemoTest@4097cac]" started-at="2026-06-14T21:16:10 IST" name="step2_searchFlights" finished-at="2026-06-14T21:16:13 IST" duration-ms="3489" status="PASS">
+        <test-method signature="step2_searchFlights()[pri:1, instance:testcases.BlazeDemoTest@69ce2f62, instance params:[Paris, London, John##Doe!!, 123 Tech Lane, Noida, UP, 201301, Visa, FOUR_ONE_ONE_ONE, John Doe]]" started-at="2026-06-15T11:00:01 IST" name="step2_searchFlights" finished-at="2026-06-15T11:00:05 IST" duration-ms="4304" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- step2_searchFlights -->
-        <test-method signature="step3_validateAndSelectFlight()[pri:2, instance:testcases.BlazeDemoTest@4097cac]" started-at="2026-06-14T21:16:13 IST" name="step3_validateAndSelectFlight" finished-at="2026-06-14T21:16:14 IST" depends-on-methods="testcases.BlazeDemoTest.step2_searchFlights" duration-ms="761" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.BlazeDemoTest@6f012914, instance params:[Boston, Berlin, &lt;Admin&gt;, 789 Web Drive, Mumbai, MH, 400001, American Express, 0000AAAA0000, Admin]]" started-at="2026-06-15T11:00:05 IST" name="setUp" finished-at="2026-06-15T11:00:09 IST" duration-ms="4057" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="step2_searchFlights()[pri:1, instance:testcases.BlazeDemoTest@6f012914, instance params:[Boston, Berlin, &lt;Admin&gt;, 789 Web Drive, Mumbai, MH, 400001, American Express, 0000AAAA0000, Admin]]" started-at="2026-06-15T11:00:09 IST" name="step2_searchFlights" finished-at="2026-06-15T11:00:12 IST" duration-ms="2741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step2_searchFlights -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.BlazeDemoTest@c9d82f9, instance params:[Portland, Rome, Amit_Sharma_$$, 456 IT Hub, Bangalore, Karnataka, 560001, Mastercard, XYZ-INVALID-CARD, Amit Sharma]]" started-at="2026-06-15T11:00:12 IST" name="setUp" finished-at="2026-06-15T11:00:15 IST" duration-ms="3653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="step2_searchFlights()[pri:1, instance:testcases.BlazeDemoTest@c9d82f9, instance params:[Portland, Rome, Amit_Sharma_$$, 456 IT Hub, Bangalore, Karnataka, 560001, Mastercard, XYZ-INVALID-CARD, Amit Sharma]]" started-at="2026-06-15T11:00:15 IST" name="step2_searchFlights" finished-at="2026-06-15T11:00:23 IST" duration-ms="8089" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step2_searchFlights -->
+        <test-method signature="step3_validateAndSelectFlight()[pri:2, instance:testcases.BlazeDemoTest@69ce2f62, instance params:[Paris, London, John##Doe!!, 123 Tech Lane, Noida, UP, 201301, Visa, FOUR_ONE_ONE_ONE, John Doe]]" started-at="2026-06-15T11:00:24 IST" name="step3_validateAndSelectFlight" finished-at="2026-06-15T11:00:25 IST" depends-on-methods="testcases.BlazeDemoTest.step2_searchFlights" duration-ms="1664" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- step3_validateAndSelectFlight -->
-        <test-method signature="step4_fillPassengerFormAndBook()[pri:3, instance:testcases.BlazeDemoTest@4097cac]" started-at="2026-06-14T21:16:14 IST" name="step4_fillPassengerFormAndBook" finished-at="2026-06-14T21:16:17 IST" depends-on-methods="testcases.BlazeDemoTest.step3_validateAndSelectFlight" duration-ms="2826" status="PASS">
+        <test-method signature="step3_validateAndSelectFlight()[pri:2, instance:testcases.BlazeDemoTest@6f012914, instance params:[Boston, Berlin, &lt;Admin&gt;, 789 Web Drive, Mumbai, MH, 400001, American Express, 0000AAAA0000, Admin]]" started-at="2026-06-15T11:00:25 IST" name="step3_validateAndSelectFlight" finished-at="2026-06-15T11:00:27 IST" depends-on-methods="testcases.BlazeDemoTest.step2_searchFlights" duration-ms="1484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step3_validateAndSelectFlight -->
+        <test-method signature="step3_validateAndSelectFlight()[pri:2, instance:testcases.BlazeDemoTest@c9d82f9, instance params:[Portland, Rome, Amit_Sharma_$$, 456 IT Hub, Bangalore, Karnataka, 560001, Mastercard, XYZ-INVALID-CARD, Amit Sharma]]" started-at="2026-06-15T11:00:27 IST" name="step3_validateAndSelectFlight" finished-at="2026-06-15T11:00:29 IST" depends-on-methods="testcases.BlazeDemoTest.step2_searchFlights" duration-ms="2099" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step3_validateAndSelectFlight -->
+        <test-method signature="step4_fillPassengerFormAndBook()[pri:3, instance:testcases.BlazeDemoTest@69ce2f62, instance params:[Paris, London, John##Doe!!, 123 Tech Lane, Noida, UP, 201301, Visa, FOUR_ONE_ONE_ONE, John Doe]]" started-at="2026-06-15T11:00:29 IST" name="step4_fillPassengerFormAndBook" finished-at="2026-06-15T11:00:34 IST" depends-on-methods="testcases.BlazeDemoTest.step3_validateAndSelectFlight" duration-ms="4756" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- step4_fillPassengerFormAndBook -->
-        <test-method signature="step5_validateConfirmationReceipt()[pri:4, instance:testcases.BlazeDemoTest@4097cac]" started-at="2026-06-14T21:16:17 IST" name="step5_validateConfirmationReceipt" finished-at="2026-06-14T21:16:51 IST" depends-on-methods="testcases.BlazeDemoTest.step4_fillPassengerFormAndBook" duration-ms="34044" status="PASS">
+        <test-method signature="step4_fillPassengerFormAndBook()[pri:3, instance:testcases.BlazeDemoTest@6f012914, instance params:[Boston, Berlin, &lt;Admin&gt;, 789 Web Drive, Mumbai, MH, 400001, American Express, 0000AAAA0000, Admin]]" started-at="2026-06-15T11:00:34 IST" name="step4_fillPassengerFormAndBook" finished-at="2026-06-15T11:00:47 IST" depends-on-methods="testcases.BlazeDemoTest.step3_validateAndSelectFlight" duration-ms="13721" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step4_fillPassengerFormAndBook -->
+        <test-method signature="step4_fillPassengerFormAndBook()[pri:3, instance:testcases.BlazeDemoTest@c9d82f9, instance params:[Portland, Rome, Amit_Sharma_$$, 456 IT Hub, Bangalore, Karnataka, 560001, Mastercard, XYZ-INVALID-CARD, Amit Sharma]]" started-at="2026-06-15T11:00:47 IST" name="step4_fillPassengerFormAndBook" finished-at="2026-06-15T11:01:00 IST" depends-on-methods="testcases.BlazeDemoTest.step3_validateAndSelectFlight" duration-ms="12373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step4_fillPassengerFormAndBook -->
+        <test-method signature="step5_validateConfirmationReceipt()[pri:4, instance:testcases.BlazeDemoTest@69ce2f62, instance params:[Paris, London, John##Doe!!, 123 Tech Lane, Noida, UP, 201301, Visa, FOUR_ONE_ONE_ONE, John Doe]]" started-at="2026-06-15T11:01:00 IST" name="step5_validateConfirmationReceipt" finished-at="2026-06-15T11:01:00 IST" depends-on-methods="testcases.BlazeDemoTest.step4_fillPassengerFormAndBook" duration-ms="306" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- step5_validateConfirmationReceipt -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.BlazeDemoTest@4097cac]" started-at="2026-06-14T21:16:51 IST" name="tearDown" finished-at="2026-06-14T21:16:52 IST" duration-ms="931" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.BlazeDemoTest@6f012914, instance params:[Boston, Berlin, &lt;Admin&gt;, 789 Web Drive, Mumbai, MH, 400001, American Express, 0000AAAA0000, Admin]]" started-at="2026-06-15T11:01:00 IST" name="tearDown" finished-at="2026-06-15T11:01:01 IST" duration-ms="664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="step5_validateConfirmationReceipt()[pri:4, instance:testcases.BlazeDemoTest@6f012914, instance params:[Boston, Berlin, &lt;Admin&gt;, 789 Web Drive, Mumbai, MH, 400001, American Express, 0000AAAA0000, Admin]]" started-at="2026-06-15T11:01:01 IST" name="step5_validateConfirmationReceipt" finished-at="2026-06-15T11:01:01 IST" depends-on-methods="testcases.BlazeDemoTest.step4_fillPassengerFormAndBook" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step5_validateConfirmationReceipt -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.BlazeDemoTest@6f012914, instance params:[Boston, Berlin, &lt;Admin&gt;, 789 Web Drive, Mumbai, MH, 400001, American Express, 0000AAAA0000, Admin]]" started-at="2026-06-15T11:01:01 IST" name="tearDown" finished-at="2026-06-15T11:01:01 IST" duration-ms="563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="step5_validateConfirmationReceipt()[pri:4, instance:testcases.BlazeDemoTest@c9d82f9, instance params:[Portland, Rome, Amit_Sharma_$$, 456 IT Hub, Bangalore, Karnataka, 560001, Mastercard, XYZ-INVALID-CARD, Amit Sharma]]" started-at="2026-06-15T11:01:02 IST" name="step5_validateConfirmationReceipt" finished-at="2026-06-15T11:01:02 IST" depends-on-methods="testcases.BlazeDemoTest.step4_fillPassengerFormAndBook" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step5_validateConfirmationReceipt -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.BlazeDemoTest@6f012914, instance params:[Boston, Berlin, &lt;Admin&gt;, 789 Web Drive, Mumbai, MH, 400001, American Express, 0000AAAA0000, Admin]]" started-at="2026-06-15T11:01:02 IST" name="tearDown" finished-at="2026-06-15T11:01:03 IST" duration-ms="877" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.BlazeDemoTest -->
       <class name="testcases.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@61c9c3fd]" started-at="2026-06-14T21:15:37 IST" name="setUp" finished-at="2026-06-14T21:15:49 IST" duration-ms="11966" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@522b2631]" started-at="2026-06-15T10:59:42 IST" name="setUp" finished-at="2026-06-15T10:59:48 IST" duration-ms="6244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateBrokenPortalGateways()[pri:1, instance:testcases.LoginTest@61c9c3fd]" started-at="2026-06-14T21:15:50 IST" name="validateBrokenPortalGateways" finished-at="2026-06-14T21:16:04 IST" duration-ms="14180" status="PASS">
+        <test-method signature="validateBrokenPortalGateways()[pri:1, instance:testcases.LoginTest@522b2631]" started-at="2026-06-15T10:59:48 IST" name="validateBrokenPortalGateways" finished-at="2026-06-15T10:59:57 IST" duration-ms="8851" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateBrokenPortalGateways -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@61c9c3fd]" started-at="2026-06-14T21:16:04 IST" name="tearDown" finished-at="2026-06-14T21:16:05 IST" duration-ms="787" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@522b2631]" started-at="2026-06-15T10:59:57 IST" name="tearDown" finished-at="2026-06-15T10:59:58 IST" duration-ms="545" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

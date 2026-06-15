@@ -1,14 +1,15 @@
 package testcases;
 
-import base.BaseTest;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Factory;
 import org.testng.annotations.Test;
+
+import base.BaseTest;
 import pages.BlazeDemoHomePage;
+import pages.ConfirmationPage;
 import pages.FlightListPage;
 import pages.PurchasePage;
-import pages.ConfirmationPage;
 import utilities.ExcelUtils;
 
 public class BlazeDemoTest extends BaseTest {
@@ -18,98 +19,90 @@ public class BlazeDemoTest extends BaseTest {
     private PurchasePage purchasePage;
     private ConfirmationPage confirmationPage;
 
-    private Object[][] globalTestDataMatrix;
-    private int currentExcelRowPointer = 0;
-    private int totalExcelDataRows = 0;
+    private final String departure;
+    private final String destination;
+    private final String name;
+    private final String address;
+    private final String city;
+    private final String state;
+    private final String zip;
+    private final String cardType;
+    private final String cardNumber;
+    private final String cardName;
 
-    private String currentDeparture;
-    private String currentDestination;
-    private String currentName;
-    private String currentAddress;
-    private String currentCity;
-    private String currentState;
-    private String currentZip;
-    private String currentCardType;
-    private String currentCardNumber;
-    private String currentCardName;
-    private String cleanName;
-
-    @BeforeClass(alwaysRun = true)
-    public void initializeTestData() {
-        log.info("Initializing Data Provider Streams for Flight Regression Suite.");
-        String excelPath = "src/test/resources/TestData.xlsx";
-        String sheetName = "BookingSheet";
-        globalTestDataMatrix = ExcelUtils.getTestData(excelPath, sheetName);
-        totalExcelDataRows = globalTestDataMatrix.length;
+    @DataProvider(name = "bookingData")
+    public static Object[][] bookingData() {
+        return ExcelUtils.getTestData("src/test/resources/TestData.xlsx", "BookingSheet");
     }
 
-    private void loadCurrentRowData() {
-        this.currentDeparture = globalTestDataMatrix[currentExcelRowPointer][0].toString();
-        this.currentDestination = globalTestDataMatrix[currentExcelRowPointer][1].toString();
-        this.currentName = globalTestDataMatrix[currentExcelRowPointer][2].toString();
-        this.currentAddress = globalTestDataMatrix[currentExcelRowPointer][3].toString();
-        this.currentCity = globalTestDataMatrix[currentExcelRowPointer][4].toString();
-        this.currentState = globalTestDataMatrix[currentExcelRowPointer][5].toString();
-        this.currentZip = globalTestDataMatrix[currentExcelRowPointer][6].toString();
-        this.currentCardType = globalTestDataMatrix[currentExcelRowPointer][7].toString();
-        this.currentCardNumber = globalTestDataMatrix[currentExcelRowPointer][8].toString();
-        this.currentCardName = globalTestDataMatrix[currentExcelRowPointer][9].toString();
-        this.cleanName = currentName.replaceAll("[^a-zA-Z0-9]", "");
+    @Factory(dataProvider = "bookingData")
+    public BlazeDemoTest(String departure, String destination, String name, String address,
+                          String city, String state, String zip, String cardType,
+                          String cardNumber, String cardName) {
+        this.departure = departure;
+        this.destination = destination;
+        this.name = name;
+        this.address = address;
+        this.city = city;
+        this.state = state;
+        this.zip = zip;
+        this.cardType = cardType;
+        this.cardNumber = cardNumber;
+        this.cardName = cardName;
     }
 
     @Test(priority = 1, groups = { "end-to-end" })
-    public void step2() {
-        loadCurrentRowData();
-        log.info("Selecting Route -> " + currentDeparture + " to " + currentDestination);
-        
+    public void step2_searchFlights() {
+        log.info("Selecting Route -> " + departure + " to " + destination);
+
         driver.get(utilities.ConfigReader.getUrl());
-        
+
         homePage = new BlazeDemoHomePage(driver);
-        homePage.selectDepartureCity(currentDeparture);
-        homePage.selectDestinationCity(currentDestination);
+        Assert.assertEquals(driver.getTitle(), "BlazeDemo", "Page title mismatch on Home Page");
+        Assert.assertEquals(driver.getCurrentUrl(), "https://blazedemo.com/index.php", "Home Page URL mismatch");
+
+        homePage.selectDepartureCity(departure);
+        homePage.selectDestinationCity(destination);
         homePage.clickFindFlights();
     }
 
-    @Test(priority = 2, dependsOnMethods = { "step2" }, groups = { "end-to-end" })
-    public void step3() {
-        log.info("Verifying flight grid selection tables.");
+    @Test(priority = 2, dependsOnMethods = { "step2_searchFlights" }, groups = { "end-to-end" })
+    public void step3_validateAndSelectFlight() {
+        log.info("Verifying flight grid selection table.");
         flightListPage = new FlightListPage(driver);
-        Assert.assertTrue(flightListPage.isFlightListDisplayed(), "Validation Failure: Flights listing matrix grid is missing.");
+        Assert.assertTrue(flightListPage.isFlightListDisplayed(),
+                "Validation Failure: Flights listing table is missing.");
         flightListPage.chooseFirstAvailableFlight();
     }
 
-    @Test(priority = 3, dependsOnMethods = { "step3" }, groups = { "end-to-end" })
-    public void step4() {
-        log.info("Filling passenger details for: " + currentName);
+    @Test(priority = 3, dependsOnMethods = { "step3_validateAndSelectFlight" }, groups = { "end-to-end" })
+    public void step4_fillPassengerFormAndBook() {
+        log.info("Filling passenger details for: " + name);
+
         purchasePage = new PurchasePage(driver);
-        purchasePage.fillPersonalAndPaymentDetails(currentName, currentAddress, currentCity, 
-                                                   currentState, currentZip, currentCardType, 
-                                                   currentCardNumber, currentCardName);
-        
+        Assert.assertTrue(purchasePage.isPurchasePageDisplayed(),
+                "Validation Failure: Purchase page header not displayed.");
+
+        String cleanName = name.replaceAll("[^a-zA-Z0-9]", "");
+
+        purchasePage.fillPersonalAndPaymentDetails(name, address, city, state, zip,
+                cardType, cardNumber, cardName);
+
         takeCheckpointScreenshot("FormInputCheckpoint_Passenger_" + cleanName);
         purchasePage.clickPurchaseFlight();
     }
 
-    @Test(priority = 4, dependsOnMethods = { "step4" }, groups = { "end-to-end" })
-    public void step5() {
-        log.info("Asserting completion receipts for passenger: " + currentName);
+    @Test(priority = 4, dependsOnMethods = { "step4_fillPassengerFormAndBook" }, groups = { "end-to-end" })
+    public void step5_validateConfirmationReceipt() {
+        log.info("Asserting completion receipts for passenger: " + name);
+
         confirmationPage = new ConfirmationPage(driver);
-        
         String confirmationMessage = confirmationPage.getConfirmationMessage();
-        Assert.assertTrue(confirmationMessage.contains("Thank you"), "Validation Failure: Success banner mismatch!");
 
+        Assert.assertEquals(confirmationMessage, "Thank you for your purchase today!",
+                "Validation Failure: Success banner mismatch!");
+
+        String cleanName = name.replaceAll("[^a-zA-Z0-9]", "");
         takeCheckpointScreenshot("FinalBookingConfirmationReceipt_" + cleanName);
-
-        currentExcelRowPointer++;
-        
-        if (currentExcelRowPointer < totalExcelDataRows) {
-            log.info("Row " + currentExcelRowPointer + " complete. Resetting for next dataset.");
-            step2();
-            step3();
-            step4();
-            step5();
-        } else {
-            log.info("Success: All rows processed.");
-        }
     }
 }

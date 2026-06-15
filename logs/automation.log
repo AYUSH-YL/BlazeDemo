@@ -609,3 +609,52 @@
 2026-06-14 21:16:51 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: FinalBookingConfirmationReceipt_Admin
 2026-06-14 21:16:51 [main] INFO  base.BaseTest - Success: All rows processed.
 2026-06-14 21:16:52 [main] INFO  base.BaseTest - Browser instance terminated cleanly.
+2026-06-15 10:59:42 [main] INFO  base.BaseTest - Initializing browser automation setup.
+2026-06-15 10:59:42 [main] INFO  base.BaseTest - Target browser selected from configuration: chrome
+2026-06-15 10:59:42 [main] INFO  base.BaseTest - System environment variable missing: Local Eclipse Sandbox. Launching visible GUI Chrome browser.
+2026-06-15 10:59:48 [main] INFO  base.BaseTest - Browser instance initialized successfully with implicit wait of 10 seconds.
+2026-06-15 10:59:48 [main] INFO  base.BaseTest - Starting Portal Security Regression Sweep (Once).
+2026-06-15 10:59:48 [main] INFO  base.BaseTest - Navigating directly to application index: https://blazedemo.com/index.php
+2026-06-15 10:59:54 [main] INFO  base.BaseTest - Injecting hardcoded registration placeholders.
+2026-06-15 10:59:56 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: Registration_419_Error_Page
+2026-06-15 10:59:56 [main] INFO  base.BaseTest - Known error : Registration 419 Page.
+2026-06-15 10:59:56 [main] INFO  base.BaseTest - Injecting hardcoded login placeholders.
+2026-06-15 10:59:57 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: Login_419_Error_Page
+2026-06-15 10:59:57 [main] INFO  base.BaseTest - Known error : 419 Page.
+2026-06-15 10:59:57 [main] INFO  base.BaseTest - Portal Sweep Complete.
+2026-06-15 10:59:58 [main] INFO  base.BaseTest - Browser instance terminated cleanly.
+2026-06-15 10:59:58 [main] INFO  base.BaseTest - Initializing browser automation setup.
+2026-06-15 10:59:58 [main] INFO  base.BaseTest - Target browser selected from configuration: chrome
+2026-06-15 10:59:58 [main] INFO  base.BaseTest - System environment variable missing: Local Eclipse Sandbox. Launching visible GUI Chrome browser.
+2026-06-15 11:00:01 [main] INFO  base.BaseTest - Browser instance initialized successfully with implicit wait of 10 seconds.
+2026-06-15 11:00:01 [main] INFO  base.BaseTest - Selecting Route -> Paris to London
+2026-06-15 11:00:05 [main] INFO  base.BaseTest - Initializing browser automation setup.
+2026-06-15 11:00:05 [main] INFO  base.BaseTest - Target browser selected from configuration: chrome
+2026-06-15 11:00:05 [main] INFO  base.BaseTest - System environment variable missing: Local Eclipse Sandbox. Launching visible GUI Chrome browser.
+2026-06-15 11:00:09 [main] INFO  base.BaseTest - Browser instance initialized successfully with implicit wait of 10 seconds.
+2026-06-15 11:00:09 [main] INFO  base.BaseTest - Selecting Route -> Boston to Berlin
+2026-06-15 11:00:12 [main] INFO  base.BaseTest - Initializing browser automation setup.
+2026-06-15 11:00:12 [main] INFO  base.BaseTest - Target browser selected from configuration: chrome
+2026-06-15 11:00:12 [main] INFO  base.BaseTest - System environment variable missing: Local Eclipse Sandbox. Launching visible GUI Chrome browser.
+2026-06-15 11:00:15 [main] INFO  base.BaseTest - Browser instance initialized successfully with implicit wait of 10 seconds.
+2026-06-15 11:00:15 [main] INFO  base.BaseTest - Selecting Route -> Portland to Rome
+2026-06-15 11:00:24 [main] INFO  base.BaseTest - Verifying flight grid selection table.
+2026-06-15 11:00:25 [main] INFO  base.BaseTest - Verifying flight grid selection table.
+2026-06-15 11:00:27 [main] INFO  base.BaseTest - Verifying flight grid selection table.
+2026-06-15 11:00:29 [main] INFO  base.BaseTest - Filling passenger details for: John##Doe!!
+2026-06-15 11:00:32 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: FormInputCheckpoint_Passenger_JohnDoe
+2026-06-15 11:00:34 [main] INFO  base.BaseTest - Filling passenger details for: <Admin>
+2026-06-15 11:00:46 [main] WARN  pages.PurchasePage - Card type 'American Express' not found. Defaulting to 'Visa'.
+2026-06-15 11:00:47 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: FormInputCheckpoint_Passenger_Admin
+2026-06-15 11:00:47 [main] INFO  base.BaseTest - Filling passenger details for: Amit_Sharma_$$
+2026-06-15 11:00:58 [main] WARN  pages.PurchasePage - Card type 'Mastercard' not found. Defaulting to 'Visa'.
+2026-06-15 11:00:59 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: FormInputCheckpoint_Passenger_AmitSharma
+2026-06-15 11:01:00 [main] INFO  base.BaseTest - Asserting completion receipts for passenger: John##Doe!!
+2026-06-15 11:01:00 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: FinalBookingConfirmationReceipt_JohnDoe
+2026-06-15 11:01:01 [main] INFO  base.BaseTest - Browser instance terminated cleanly.
+2026-06-15 11:01:01 [main] INFO  base.BaseTest - Asserting completion receipts for passenger: <Admin>
+2026-06-15 11:01:01 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: FinalBookingConfirmationReceipt_Admin
+2026-06-15 11:01:01 [main] INFO  base.BaseTest - Browser instance terminated cleanly.
+2026-06-15 11:01:02 [main] INFO  base.BaseTest - Asserting completion receipts for passenger: Amit_Sharma_$$
+2026-06-15 11:01:02 [main] INFO  base.BaseTest - Triggering manual checkpoint screenshot: FinalBookingConfirmationReceipt_AmitSharma
+2026-06-15 11:01:03 [main] INFO  base.BaseTest - Browser instance terminated cleanly.
